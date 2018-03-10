@@ -9,7 +9,7 @@ class Navbar1 extends React.Component {
             <Navbar>
                 <RemaxLogo />
                 
-                <div>
+                <div style={{ marginLeft: 15 }}>
                     <Information>
                         Jacob West, 512-669-9592
                     </Information>
@@ -39,9 +39,16 @@ class Navbar1 extends React.Component {
 const Navbar = styled.nav`
     display: flex;
     align-items: center;
+    position: fixed;
+    top: 0;
+    z-index:1;
+    background: white;
+    width: 100%;
 `
 const Information = styled.p`
-
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-style: italic;
 `
 const ListItem = styled.li`
 
@@ -50,6 +57,15 @@ const List = styled.ul`
     list-style: none;
     display: flex;
     padding: 0;
+    margin: 0;
+
+    > * {
+        margin-right: 15px;
+    }
+
+    > *:last-child {
+        margin-right: 0;
+    }
 
     @media (max-width: 767px) {
         display: none;

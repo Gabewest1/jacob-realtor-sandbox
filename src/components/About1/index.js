@@ -6,9 +6,6 @@ class About1 extends React.Component {
         return (
             <Container>
                 <Row>
-
-                </Row>
-                <Row>
                     <Box>
                         <Title>Lorem Title Ipsum</Title>
 
