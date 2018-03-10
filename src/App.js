@@ -4,6 +4,8 @@ import styled from "styled-components"
 import Navbar1 from "./components/Navbar1"
 import MLASearchForm from "./components/MLASearchForm"
 import About1 from "./components/About1"
+import About2 from "./components/About2"
+import About3 from "./components/About3"
 import Testimonials1 from "./components/Testimonials1"
 import Testimonials2 from "./components/Testimonials2"
 
@@ -16,8 +18,8 @@ class App extends Component {
           <HeroImage src="/assets/images/hero.jpg" />
           <_MLASearchForm />
         </Header>
-        <About1 />
-        <Testimonials2 />
+        <About3 />
+        <Testimonials1 />
       </div>
     )
   }
