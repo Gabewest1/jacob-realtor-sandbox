@@ -22,7 +22,7 @@ class About2 extends React.Component {
                             fam magna selfies aliqua asymmetrical sed gastropub.
                         </Description>
                     </Wrapper>
-                    <Image src="/assets/images/lil_jacky.jpg" />
+                    <Image src="/assets/images/jacob_no_bg.png" />
                 </div>
 
                 <Button>Learn More About My Team</Button>

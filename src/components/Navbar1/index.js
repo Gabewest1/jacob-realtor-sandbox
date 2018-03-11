@@ -47,16 +47,26 @@ const Navbar = styled.nav`
     width: 100%;
     box-sizing: border-box;
     padding: 0 15px;
+
+    * {
+        cursor: pointer;
+    }
 `
 const Information = styled.p`
     margin-top: 0;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     font-style: italic;
     font-size: 12px;
     text-align: end;
+    cursor: default;
 `
 const ListItem = styled.li`
     text-align: center;
+    color: #004e95;
+
+    &:hover {
+        color: #d81d28;
+    }
 `
 const List = styled.ul`
     list-style: none;
