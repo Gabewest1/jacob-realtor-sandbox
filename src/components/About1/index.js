@@ -3,10 +3,12 @@ import styled from "styled-components"
 
 class About1 extends React.Component {
     render() {
+        const padding = "0 20px 20px 20px"
+
         return (
             <Container>
                 <Row>
-                    <Box>
+                    <Box style={{ padding, boxSizing: "border-box" }}>
                         <Title>Lorem Title Ipsum</Title>
 
                         <Description>
@@ -16,16 +18,19 @@ class About1 extends React.Component {
                             fam magna selfies aliqua asymmetrical sed gastropub. Blue bottle authentic aliqua portland. Coloring book qui crucifix tacos leggings
                             cardigan fashion axe tilde, ethical keffiyeh officia authentic YOLO seitan laborum. Cupidatat brooklyn letterpress non.
                         </Description>
+                        <Wrapper>
+                            <Link>Learn More</Link>
+                        </Wrapper>
                     </Box>
                     <Box>
-                        <Image src="/assets/images/lil_jacky.jpg" />
+                        <Image src="/assets/images/home1.jpg" />
                     </Box>
                 </Row>
                 <Row>
                     <Box>
-                        <Image src="/assets/images/lil_jacky.jpg" />
+                        <Image src="/assets/images/home2.jpg" />
                     </Box>
-                    <Box>
+                    <Box style={{ padding, boxSizing: "border-box" }}>
                         <Title>Lorem Title Ipsum</Title>
 
                         <Description>
@@ -35,6 +40,9 @@ class About1 extends React.Component {
                             fam magna selfies aliqua asymmetrical sed gastropub. Blue bottle authentic aliqua portland. Coloring book qui crucifix tacos leggings
                             cardigan fashion axe tilde, ethical keffiyeh officia authentic YOLO seitan laborum. Cupidatat brooklyn letterpress non.
                         </Description>
+                        <Wrapper>
+                            <Link>Learn More</Link>
+                        </Wrapper>
                     </Box>
                 </Row>
             </Container>
@@ -44,27 +52,50 @@ class About1 extends React.Component {
 
 const Image = styled.img`
     width: 100%;
+    height: 100%;
 `
 const Title = styled.h1`
-
+    margin: 0;
+    font-weight: 500;
+    margin-bottom: 10px;
 ` 
 const Description = styled.p`
-
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
 `
 const Box = styled.div`
     width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 `
 const Row = styled.div`
     display: flex;
     max-width: 968px;
     margin: 0 auto;
 `
-const Container = styled.div`
+const Link = styled.a`
+    display: inline-block;
+    color: black;
+    border: solid 2px black;
+    border-radius: 30px;
+    padding: 8px 35px;
+    text-decoration: none;
+    transition: all .2s linear;
+    cursor: pointer;
+    margin-top: 15px;
     
+    &:hover {
+        background: white;
+        color: black;
+        border-color: black;
+    }
+`
+const Wrapper = styled.div`
+    display: flex;
+    justify-content: flex-end;
+`
+const Container = styled.div`
+    background: #efefef;
+    padding: 30px 0;   
 `
 
 export default About1

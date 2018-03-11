@@ -54,7 +54,19 @@ const Description = styled.p`
     }
 `
 const Link = styled.a`
-
+    display: block;
+    color: white;
+    border: solid 2px black;
+    border-radius: 30px;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: all .2s linear;
+    
+    &:hover {
+        background: white;
+        color: white;
+        border-color: black;
+    }
 `
 const Container = styled.div`
 

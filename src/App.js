@@ -19,12 +19,16 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar1 />
+
         <Header>
           <HeroImage src="/assets/images/hero.jpg" />
           <_MLASearchForm />
         </Header>
+
         <About4 />
-        <Testimonials3 />
+
+
+        <Testimonials2 />
       </div>
     )
   }

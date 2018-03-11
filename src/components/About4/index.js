@@ -51,6 +51,7 @@ const Link = styled.a`
     padding: 10px 15px;
     text-decoration: none;
     transition: all .2s linear;
+    
     &:hover {
         background: white;
         color: #d81d28;
