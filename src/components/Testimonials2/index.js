@@ -40,7 +40,8 @@ class Testimonials2 extends React.Component {
 }
 
 const Text = styled.blockquote`
-
+    font-size: 14px;
+    line-height: 26px;
 `
 const Image = styled.div`
     width: 300px;
@@ -50,14 +51,15 @@ const Image = styled.div`
     background-size: cover;
     background-position: top center;
     margin: 0 auto;
-    border-radius: 50%;
+    border-radius: 40px;
 
     @media (min-width: 768px) {
         width: 600px;
     }
 `
-const Title = styled.h1`
-
+const Title = styled.h2`
+    font-weight: 100;
+    font-style: italic;
 ` 
 const Quote = styled.div`
     padding: 0 15px;

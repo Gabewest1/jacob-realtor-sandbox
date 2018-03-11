@@ -37,7 +37,8 @@ const Container = styled.div`
 
 const Description = styled.p`
     font-size: 14px;
-    line-height: 20px;
+    line-height: 31px;
+    margin: 17px 0;
 `
 const Wrapper = styled.div`
     display: flex;

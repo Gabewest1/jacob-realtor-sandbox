@@ -39,7 +39,7 @@ class Testimonials1 extends React.Component {
     }
 }
 
-const Text = styled.p`
+const Text = styled.blockquote`
     line-height: 30px;
 `
 const Image = styled.div`
@@ -58,6 +58,7 @@ const Image = styled.div`
 const Title = styled.h1`
     font-size: 24px;
     font-weight: 400;
+    float: right;
 ` 
 const Quote = styled.div`
     padding: 0 15px;
