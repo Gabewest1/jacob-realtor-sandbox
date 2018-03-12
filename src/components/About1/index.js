@@ -31,7 +31,7 @@ class About1 extends React.Component {
                         <Image src="/assets/images/home2.jpg" />
                     </Box>
                     <Box style={{ padding, boxSizing: "border-box" }}>
-                        <Title>Lorem Title Ipsum</Title>
+                        <Title style={{ marginTop: 15 }}>Lorem Title Ipsum</Title>
 
                         <Description>
                             Lorem ipsum dolor amet polaroid vice eiusmod iceland snackwave, 8-bit migas yuccie proident small batch seitan.
