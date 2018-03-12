@@ -1,49 +1,59 @@
 import React from "react"
 import styled from "styled-components"
 
+import { testimonials } from "../../constants"
+
 class Testimonials2 extends React.Component {
     render() {
         return (
             <Container>
-                <Testimonial>
-                    <Quote>
-                        "Lorem ipsum dolor amet polaroid vice eiusmod iceland snackwave, 8-bit migas yuccie proident small batch seitan. Shoreditch hoodie cloud bread master cleanse ipsum consequat williamsburg pabst butcher vaporware quinoa. Crucifix banjo health goth voluptate pok pok salvia XOXO. Coloring book tacos incididunt, migas palo santo actually poutine mlkshk fam magna selfies aliqua asymmetrical sed gastropub. Blue bottle authentic aliqua portland. Coloring book qui crucifix tacos leggings cardigan fashion axe tilde, ethical keffiyeh officia authentic YOLO seitan laborum. Cupidatat brooklyn letterpress non."
-                    </Quote>
-                    <Title>&mdash; John & Karren Witherspoon</Title>
-                </Testimonial>
 
-                <Testimonial>
-                    <Quote>
-                        "Lorem ipsum dolor amet polaroid vice eiusmod iceland snackwave, 8-bit migas yuccie proident small batch seitan. Shoreditch hoodie cloud bread master cleanse ipsum consequat williamsburg pabst butcher vaporware quinoa. Crucifix banjo health goth voluptate pok pok salvia XOXO. Coloring book tacos incididunt, migas palo santo actually poutine mlkshk fam magna selfies aliqua asymmetrical sed gastropub. Blue bottle authentic aliqua portland. Coloring book qui crucifix tacos leggings cardigan fashion axe tilde, ethical keffiyeh officia authentic YOLO seitan laborum. Cupidatat brooklyn letterpress non."
-                    </Quote>
-                    <Title>&mdash; John & Karren Witherspoon</Title>
-                </Testimonial>
+                <SatisfiedCustomers>Satisfied Customers</SatisfiedCustomers>
 
-                <Testimonial>
-                    <Quote>
-                        "Lorem ipsum dolor amet polaroid vice eiusmod iceland snackwave, 8-bit migas yuccie proident small batch seitan. Shoreditch hoodie cloud bread master cleanse ipsum consequat williamsburg pabst butcher vaporware quinoa. Crucifix banjo health goth voluptate pok pok salvia XOXO. Coloring book tacos incididunt, migas palo santo actually poutine mlkshk fam magna selfies aliqua asymmetrical sed gastropub. Blue bottle authentic aliqua portland. Coloring book qui crucifix tacos leggings cardigan fashion axe tilde, ethical keffiyeh officia authentic YOLO seitan laborum. Cupidatat brooklyn letterpress non."                    
-                    </Quote>
-                    <Title>&mdash; John & Karren Witherspoon</Title>
-                </Testimonial>
+                <Testimonials>
+                    <Testimonial>
+                        <Quote>{ testimonials[0] }</Quote>
+                        <Title>&mdash; John & Karren Witherspoon</Title>
+                    </Testimonial>
+
+                    <Testimonial>
+                        <Quote>{ testimonials[1] }</Quote>
+                        <Title>&mdash; John & Karren Witherspoon</Title>
+                    </Testimonial>
+
+                    <Testimonial>
+                        <Quote>{ testimonials[2] }</Quote>
+                        <Title>&mdash; John & Karren Witherspoon</Title>
+                    </Testimonial>
+                </Testimonials>
             </Container>
         )
     }
 }
 
+const SatisfiedCustomers = styled.h1`
+    text-align: center;
+    margin: 15px 0 10px 0;
+    letter-spacing: 5px;
+    font-weight: 100;
+    // font-size: 58px;
+
+    // font-family: 'Dancing Script', cursive;
+    // font-family: 'Great Vibes', cursive;
+    // font-family: 'Playball', cursive;
+`
 const Title = styled.h1`
     font-size: 14px;
 `
-const Quote = styled.p`
+const Quote = styled.blockquote`
     font-size: 14px;
     line-height: 24px;
+    font-style: italic;
 `
 const Testimonial = styled.div`
     
 `
-const Container = styled.div`
-    margin-top: 50px;
-    padding: 15px;
-
+const Testimonials = styled.div`
     > * {
         margin-bottom: 60px;
     }
@@ -59,6 +69,10 @@ const Container = styled.div`
             width: 30%;
         }
     }
+`
+
+const Container = styled.div`
+    padding: 15px;
 `
 
 export default Testimonials2

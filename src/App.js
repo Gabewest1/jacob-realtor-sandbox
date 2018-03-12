@@ -7,6 +7,7 @@ import About1 from "./components/About1"
 import About2 from "./components/About2"
 import About3 from "./components/About3"
 import About4 from "./components/About4"
+import Icons from "./components/Icons"
 import Testimonials1 from "./components/Testimonials1"
 import Testimonials2 from "./components/Testimonials2"
 import Testimonials3 from "./components/Testimonials3"
@@ -29,10 +30,17 @@ class App extends Component {
           </Wrapper>
         </Header>
 
+        <div style={{ padding: "60px 0" }}>
+          <Icons />
+        </div>
+
         <About4 />
 
-
         <Testimonials3 />
+
+        <Footer>
+          <Copyright>© COPYRIGHT 2018 JACOB WEST. ALL RIGHTS RESERVED.</Copyright>
+        </Footer>
       </div>
     )
   }
@@ -58,12 +66,24 @@ const HeroImage = styled.div`
 `
 const Wrapper = styled.div`
   position: absolute;
-  bottom: 30%;
+  bottom: 25%;
   left: 50%;
   transform: translateX(-50%);
   width: 80%; 
 `
 const Header = styled.div`
   position: relative;
+`
+const Copyright = styled.p`
+  margin: 0;
+  color: white;
+  font-size: 14px;
+`
+const Footer = styled.div`
+  height: 70px;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `
 export default App

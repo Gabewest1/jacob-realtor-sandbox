@@ -1,6 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 
+import { testimonials } from "../../constants"
+
 class Testimonials1 extends React.Component {
     render() {
         return (
@@ -8,18 +10,14 @@ class Testimonials1 extends React.Component {
                 <Testimonial>
                     <Image src="/assets/images/testimonial1.jpg" />
                     <Quote>
-                        <Text style={{ fontSize: "14px" }}>
-                            "Lorem ipsum dolor amet polaroid vice eiusmod iceland snackwave, 8-bit migas yuccie proident small batch seitan. Shoreditch hoodie cloud bread master cleanse ipsum consequat williamsburg pabst butcher vaporware quinoa. Crucifix banjo health goth voluptate pok pok salvia XOXO. Coloring book tacos incididunt, migas palo santo actually poutine mlkshk fam magna selfies aliqua asymmetrical sed gastropub. Blue bottle authentic aliqua portland. Coloring book qui crucifix tacos leggings cardigan fashion axe tilde, ethical keffiyeh officia authentic YOLO seitan laborum. Cupidatat brooklyn letterpress non."
-                        </Text>
+                        <Text style={{ fontSize: "14px" }}>{ testimonials[0] }</Text>
                         <Title>&mdash; John & Karren Witherspoon</Title>
                     </Quote>
                 </Testimonial>
 
                 <Testimonial>
                     <Quote>
-                        <Text style={{ fontSize: "14px" }}>
-                            "Lorem ipsum dolor amet polaroid vice eiusmod iceland snackwave, 8-bit migas yuccie proident small batch seitan. Shoreditch hoodie cloud bread master cleanse ipsum consequat williamsburg pabst butcher vaporware quinoa. Crucifix banjo health goth voluptate pok pok salvia XOXO. Coloring book tacos incididunt, migas palo santo actually poutine mlkshk fam magna selfies aliqua asymmetrical sed gastropub. Blue bottle authentic aliqua portland. Coloring book qui crucifix tacos leggings cardigan fashion axe tilde, ethical keffiyeh officia authentic YOLO seitan laborum. Cupidatat brooklyn letterpress non."
-                        </Text>
+                        <Text style={{ fontSize: "14px" }}>{ testimonials[1] }</Text>
                         <Title>&mdash; John & Karren Witherspoon</Title>
                     </Quote>
                     <Image src="/assets/images/testimonial2.jpg" />
@@ -28,9 +26,7 @@ class Testimonials1 extends React.Component {
                 <Testimonial>
                     <Image src="/assets/images/testimonial3.jpg" />
                     <Quote>
-                        <Text style={{ fontSize: "14px" }}>
-                            "Lorem ipsum dolor amet polaroid vice eiusmod iceland snackwave, 8-bit migas yuccie proident small batch seitan. Shoreditch hoodie cloud bread master cleanse ipsum consequat williamsburg pabst butcher vaporware quinoa. Crucifix banjo health goth voluptate pok pok salvia XOXO. Coloring book tacos incididunt, migas palo santo actually poutine mlkshk fam magna selfies aliqua asymmetrical sed gastropub. Blue bottle authentic aliqua portland. Coloring book qui crucifix tacos leggings cardigan fashion axe tilde, ethical keffiyeh officia authentic YOLO seitan laborum. Cupidatat brooklyn letterpress non."
-                        </Text>                    
+                        <Text style={{ fontSize: "14px" }}>{ testimonials[2] }</Text>                
                         <Title>&mdash; John & Karren Witherspoon</Title>
                     </Quote>
                 </Testimonial>
