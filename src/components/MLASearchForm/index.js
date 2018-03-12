@@ -124,7 +124,8 @@ const Form = styled.form`
     padding: 15px;
     background: white;
     position: relative;
-    width: 80%;
+    width: 100%;
+    box-sizing: border-box;
     
     @media (max-width: 854px) {
         padding-bottom: 61px;

@@ -35,6 +35,7 @@ const Title = styled.h1`
 `
 const Quote = styled.p`
     font-size: 14px;
+    line-height: 24px;
 `
 const Testimonial = styled.div`
     

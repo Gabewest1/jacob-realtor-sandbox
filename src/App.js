@@ -21,28 +21,47 @@ class App extends Component {
         <Navbar1 />
 
         <Header>
-          <HeroImage src="/assets/images/hero.jpg" />
-          <_MLASearchForm />
+          <HeroImage />
+
+          <Wrapper>
+            <HeroText>Find Your Next Home</HeroText>
+            <_MLASearchForm />
+          </Wrapper>
         </Header>
 
         <About4 />
 
 
-        <Testimonials2 />
+        <Testimonials3 />
       </div>
     )
   }
 }
 
 const _MLASearchForm = styled(MLASearchForm)`
-  position: absolute;
-  bottom: 10%;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 100%;
 `
-const HeroImage = styled.img`
+const HeroText = styled.h1`
+  color: white;
+  margin-bottom: 10px;
+  font-weight: 100;
+  font-family: open sans;
+`
+const HeroImage = styled.div`
+  background: url(/assets/images/hero.jpg) no-repeat;
+  background-size: cover;
+  background-position: bottom center;
   width: 100%;
   display: block;
+  object-fit: cover;
+  height: 100vh;
+`
+const Wrapper = styled.div`
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%; 
 `
 const Header = styled.div`
   position: relative;

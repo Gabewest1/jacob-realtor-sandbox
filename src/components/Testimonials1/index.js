@@ -43,6 +43,7 @@ const Text = styled.blockquote`
     line-height: 30px;
 `
 const Image = styled.div`
+    border-radius: 40px;
     width: 300px;
     width: 90%;
     min-height: 400px;
@@ -52,7 +53,7 @@ const Image = styled.div`
     margin: 0 auto;
 
     @media (min-width: 768px) {
-        width: 600px;
+        width: 530px;
     }
 `
 const Title = styled.h1`
