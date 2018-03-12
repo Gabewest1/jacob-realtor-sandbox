@@ -34,12 +34,13 @@ export default class Icons extends React.Component {
 }
 
 const Image = styled.img`
-
+    cursor: pointer;
 `
 const Title = styled.h1`
     margin: 5px;
     font-weight: 100;
     color: #004e95;
+    cursor: pointer;
 `
 const Description = styled.p`
     margin: 0;

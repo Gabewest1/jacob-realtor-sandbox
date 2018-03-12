@@ -42,7 +42,7 @@ const Image = styled.div`
     border-radius: 40px;
     width: 300px;
     width: 90%;
-    min-height: 400px;
+    min-height: 346px;
     background: url(${({ src }) => src}) no-repeat;
     background-size: cover;
     background-position: top center;
