@@ -36,7 +36,7 @@ class App extends Component {
 
         <About4 />
 
-        <Testimonials1 />
+        <Testimonials4 />
 
         <Footer>
           <Copyright>© COPYRIGHT 2018 JACOB WEST. ALL RIGHTS RESERVED.</Copyright>

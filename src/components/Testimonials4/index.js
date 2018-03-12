@@ -6,20 +6,31 @@ import { testimonials } from "../../constants"
 
 class Testimonials2 extends React.Component {
     render() {
+        const testimonialsWithoutQuotation = testimonials.map(testimonial => testimonial.substring(1, testimonial.length-1))
+
         return (
             <_Carousel autoPlay infiniteLoop>
                 <Testimonial>
-                    <Quote>{ testimonials[0] }</Quote>
+                    <div style={{ display: "flex" }}>
+                        <DoubleQuoteIcon src="/assets/images/quote-icon.svg" />
+                        <Quote>{ testimonialsWithoutQuotation[0] }</Quote>
+                    </div>
                     <Title>&mdash; John & Karren Witherspoon</Title>
                 </Testimonial>
 
                 <Testimonial>
-                <Quote>{ testimonials[1] }</Quote>
+                    <div style={{ display: "flex" }}>
+                        <DoubleQuoteIcon src="/assets/images/quote-icon.svg" />
+                        <Quote>{ testimonialsWithoutQuotation[1] }</Quote>
+                    </div>
                     <Title>&mdash; John & Karren Witherspoon</Title>
                 </Testimonial>
 
                 <Testimonial>
-                <Quote>{ testimonials[2] }</Quote>
+                    <div style={{ display: "flex" }}>
+                        <DoubleQuoteIcon src="/assets/images/quote-icon.svg" />
+                        <Quote>{ testimonialsWithoutQuotation[2] }</Quote>
+                    </div>
                     <Title>&mdash; John & Karren Witherspoon</Title>
                 </Testimonial>
             </_Carousel>
@@ -28,11 +39,17 @@ class Testimonials2 extends React.Component {
     }
 }
 
+const DoubleQuoteIcon = styled.img`
+    max-width: 32px !important;
+    max-height: 29px !important;
+    margin-right: 15px;
+`
 const Title = styled.h1`
     font-size: 14px;
 `
 const Quote = styled.p`
     font-size: 14px;
+    font-style: italic;
 `
 const Testimonial = styled.div`
     padding: 70px;
