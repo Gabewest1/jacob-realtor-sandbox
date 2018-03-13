@@ -6,7 +6,7 @@ export default class Icons extends React.Component {
         return (
             <IconsView>
                 <Wrapper>
-                    <Image src="/assets/images/search-icon.png" />
+                    <Image src="/assets/images/search-icon.svg" />
                     <Title>Find Your Dream Home</Title>
                     <Description>
                         Ready to buy your dream home?  I will analyze the data you provide and get back to you with a range of properties matching your search criteria.
@@ -14,7 +14,7 @@ export default class Icons extends React.Component {
                 </Wrapper>
 
                 <Wrapper>
-                    <Image src="/assets/images/money-icon.png" />
+                    <Image src="/assets/images/money-icon.svg" />
                     <Title>Your Home's Value</Title>
                     <Description>
                         I will provide you with comparable sale information for your neighborhood and a range of approximate values for your home.
@@ -22,7 +22,7 @@ export default class Icons extends React.Component {
                 </Wrapper>
 
                 <Wrapper>
-                    <Image src="/assets/images/pencil-icon.png" />
+                    <Image src="/assets/images/pencil-icon.svg" />
                     <Title>List Your Home</Title>
                     <Description>
                         Ready to sell?  If you are interested in listing your property for sale, complete some preliminary information to get the process started.
@@ -35,6 +35,8 @@ export default class Icons extends React.Component {
 
 const Image = styled.img`
     cursor: pointer;
+    width: 100%;
+    max-width: 110px;
 `
 const Title = styled.h1`
     margin: 5px;

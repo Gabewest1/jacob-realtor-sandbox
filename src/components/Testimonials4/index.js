@@ -9,7 +9,7 @@ class Testimonials2 extends React.Component {
         const testimonialsWithoutQuotation = testimonials.map(testimonial => testimonial.substring(1, testimonial.length-1))
 
         return (
-            <_Carousel autoPlay infiniteLoop>
+            <_Carousel autoPlay infiniteLoop showStatus={ false }>
                 <Testimonial>
                     <div style={{ display: "flex" }}>
                         <DoubleQuoteIcon src="/assets/images/quote-icon.svg" />
@@ -66,6 +66,10 @@ const _Carousel = styled(Carousel)`
 
     .slide {
         background: white !important;
+    }
+
+    .control-dots .dot {
+        background: black !important;
     }
 `
 

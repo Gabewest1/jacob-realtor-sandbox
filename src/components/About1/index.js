@@ -3,13 +3,13 @@ import styled from "styled-components"
 
 class About1 extends React.Component {
     render() {
-        const padding = "0 20px 20px 20px"
+        const padding = "20px"
 
         return (
             <Container>
                 <Row>
-                    <Box style={{ padding, boxSizing: "border-box" }}>
-                        <Title>Lorem Title Ipsum</Title>
+                    <Box style={{ padding, boxSizing: "border-box", width: "106%", background: "#004e95" }}>
+                        <Title>Jacob West Realty in Austin Tx</Title>
 
                         <Description>
                             Lorem ipsum dolor amet polaroid vice eiusmod iceland snackwave, 8-bit migas yuccie proident small batch seitan.
@@ -19,11 +19,11 @@ class About1 extends React.Component {
                             cardigan fashion axe tilde, ethical keffiyeh officia authentic YOLO seitan laborum. Cupidatat brooklyn letterpress non.
                         </Description>
                         <Wrapper>
-                            <Link>Learn More</Link>
+                            <Link hoverColor="#004e95">Work With Me</Link>
                         </Wrapper>
                     </Box>
                     <Box>
-                        <Image src="/assets/images/home1.jpg" />
+                        <Image src="/assets/images/lil_jacky_half.png" />
                     </Box>
                 </Row>
                 <Row>
@@ -31,7 +31,7 @@ class About1 extends React.Component {
                         <Image src="/assets/images/home2.jpg" />
                     </Box>
                     <Box style={{ padding, boxSizing: "border-box" }}>
-                        <Title style={{ marginTop: 15 }}>Lorem Title Ipsum</Title>
+                        <Title>I'm Committed to YOU!</Title>
 
                         <Description>
                             Lorem ipsum dolor amet polaroid vice eiusmod iceland snackwave, 8-bit migas yuccie proident small batch seitan.
@@ -41,7 +41,7 @@ class About1 extends React.Component {
                             cardigan fashion axe tilde, ethical keffiyeh officia authentic YOLO seitan laborum. Cupidatat brooklyn letterpress non.
                         </Description>
                         <Wrapper>
-                            <Link>Learn More</Link>
+                            <Link hoverColor="#d81d28">Learn More About Me</Link>
                         </Wrapper>
                     </Box>
                 </Row>
@@ -51,42 +51,44 @@ class About1 extends React.Component {
 }
 
 const Image = styled.img`
+    display: block;
     width: 100%;
     height: 100%;
+    max-height: 500px;
+    object-fit: cover;
 `
 const Title = styled.h1`
     margin: 0;
     font-weight: 500;
-    margin-bottom: 10px;
 ` 
 const Description = styled.p`
     font-size: 14px;
     line-height: 24px;
-    margin: 0;
+    margin: 24px 0;
 `
 const Box = styled.div`
     width: 50%;
 `
 const Row = styled.div`
     display: flex;
-    max-width: 968px;
-    margin: 0 auto;
 `
 const Link = styled.a`
-    display: inline-block;
-    color: black;
-    border: solid 2px black;
+    display: block;
+    color: white;
+    border: solid 2px white;
     border-radius: 30px;
-    padding: 8px 35px;
+    padding: 10px 15px;
     text-decoration: none;
     transition: all .2s linear;
-    cursor: pointer;
     margin-top: 15px;
-    
+    min-width: 177px;
+    text-align: center;
+    cursor: pointer;
+
     &:hover {
         background: white;
-        color: black;
-        border-color: black;
+        color: ${({ hoverColor }) => hoverColor};
+        border-color: transparent;
     }
 `
 const Wrapper = styled.div`
@@ -94,8 +96,8 @@ const Wrapper = styled.div`
     justify-content: flex-end;
 `
 const Container = styled.div`
-    background: #efefef;
-    padding: 30px 0;   
+    background: #d81d28;
+    color: white; 
 `
 
 export default About1

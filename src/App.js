@@ -34,7 +34,7 @@ class App extends Component {
           <Icons />
         </div>
 
-        <About4 />
+        <About1 />
 
         <Testimonials4 />
 
