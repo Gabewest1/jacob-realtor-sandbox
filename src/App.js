@@ -51,9 +51,11 @@ const _MLASearchForm = styled(MLASearchForm)`
 `
 const HeroText = styled.h1`
   color: white;
+  text-shadow: 2px 2px black;
   margin-bottom: 10px;
   font-weight: 100;
   font-family: open sans;
+  font-size: 36px;
 `
 const HeroImage = styled.div`
   background: url(/assets/images/hero.jpg) no-repeat;

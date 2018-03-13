@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 class About1 extends React.Component {
     render() {
-        const padding = "20px"
+        const padding = "38px 38px 0 38px"
 
         return (
             <Container>
