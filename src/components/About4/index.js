@@ -15,6 +15,10 @@ class About4 extends React.Component {
                     fam magna selfies aliqua asymmetrical sed gastropub.
                     Coloring book tacos incididunt, migas palo santo actually poutine mlkshk
                     fam magna selfies aliqua asymmetrical sed gastropub.
+                    Coloring book tacos incididunt, migas palo santo actually poutine mlkshk
+                    fam magna selfies aliqua asymmetrical sed gastropub.
+                    Coloring book tacos incididunt, migas palo santo actually poutine mlkshk
+                    fam magna selfies aliqua asymmetrical sed gastropub.
                 </Description>
                 <Wrapper>
                     <Link href="">Learn More About My Team</Link>

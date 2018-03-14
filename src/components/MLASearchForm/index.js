@@ -88,7 +88,7 @@ const QueryInput = styled.input`
     padding: 0 10px;
     border: none;
     flex-grow: 1;
-    font-size: 20px;
+    font-size: 15px;
 `
 const Option = styled.div`
 
@@ -105,7 +105,7 @@ const Options = styled.ul`
 const SearchButton = styled.button`
     border: none;
     border-right: ${ borderColor };
-    padding: 0 44px;
+    width: 20%;
 `
 const Field = styled.div`
 
@@ -121,7 +121,7 @@ const Container = styled.div`
     }
 `
 const Form = styled.form`
-    padding: 15px;
+    padding: 8px;
     background: white;
     position: relative;
     width: 100%;

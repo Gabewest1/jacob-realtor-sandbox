@@ -13,7 +13,7 @@ import Testimonials2 from "./components/Testimonials2"
 import Testimonials3 from "./components/Testimonials3"
 import Testimonials4 from "./components/Testimonials4"
 
-import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 class App extends Component {
   render() {
@@ -59,19 +59,18 @@ const HeroText = styled.h1`
 `
 const HeroImage = styled.div`
   background: url(/assets/images/hero.jpg) no-repeat;
-  background-size: cover;
-  background-position: bottom center;
+  background-size: 120%;
+  background-position: top center;
   width: 100%;
   display: block;
-  object-fit: cover;
   height: 100vh;
 `
 const Wrapper = styled.div`
   position: absolute;
-  bottom: 25%;
+  bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
-  width: 80%; 
+  width: 90%; 
 `
 const Header = styled.div`
   position: relative;

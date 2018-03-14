@@ -19,7 +19,7 @@ class About1 extends React.Component {
                             cardigan fashion axe tilde, ethical keffiyeh officia authentic YOLO seitan laborum. Cupidatat brooklyn letterpress non.
                         </Description>
                         <Wrapper>
-                            <Link hoverColor="#004e95">Work With Me</Link>
+                            <Link hoverColor="#004e95">Learn More About My Team</Link>
                         </Wrapper>
                     </Box>
                     <Box>
@@ -41,7 +41,7 @@ class About1 extends React.Component {
                             cardigan fashion axe tilde, ethical keffiyeh officia authentic YOLO seitan laborum. Cupidatat brooklyn letterpress non.
                         </Description>
                         <Wrapper>
-                            <Link hoverColor="#d81d28">Learn More About Me</Link>
+                            <Link hoverColor="#d81d28">Work With Me</Link>
                         </Wrapper>
                     </Box>
                 </Row>
@@ -74,8 +74,6 @@ const Row = styled.div`
 `
 const Link = styled.a`
     display: block;
-    color: white;
-    border: solid 2px white;
     border-radius: 30px;
     padding: 10px 15px;
     text-decoration: none;
@@ -84,11 +82,15 @@ const Link = styled.a`
     min-width: 177px;
     text-align: center;
     cursor: pointer;
-
+    background: white;
+    color: ${({ hoverColor }) => hoverColor};
+    border: solid 2px transparent;
+    font-weight: bold;
+    
     &:hover {
-        background: white;
-        color: ${({ hoverColor }) => hoverColor};
-        border-color: transparent;
+        color: white;
+        background: transparent;
+        border: solid 2px white;
     }
 `
 const Wrapper = styled.div`
