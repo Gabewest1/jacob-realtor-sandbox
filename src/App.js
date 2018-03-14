@@ -59,7 +59,7 @@ const HeroText = styled.h1`
 `
 const HeroImage = styled.div`
   background: url(/assets/images/hero.jpg) no-repeat;
-  background-size: 120%;
+  background-size: cover;
   background-position: top center;
   width: 100%;
   display: block;

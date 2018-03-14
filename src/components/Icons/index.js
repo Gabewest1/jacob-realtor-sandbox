@@ -15,7 +15,7 @@ export default class Icons extends React.Component {
 
                 <Wrapper>
                     <Image src="/assets/images/money-icon.svg" />
-                    <Title>Your Home's Value</Title>
+                    <Title>List Your Home</Title>
                     <Description>
                         I will provide you with comparable sale information for your neighborhood and a range of approximate values for your home.
                     </Description>
@@ -23,7 +23,7 @@ export default class Icons extends React.Component {
 
                 <Wrapper>
                     <Image src="/assets/images/pencil-icon.svg" />
-                    <Title>List Your Home</Title>
+                    <Title>Buy Your Home</Title>
                     <Description>
                         Ready to sell?  If you are interested in listing your property for sale, complete some preliminary information to get the process started.
                     </Description>

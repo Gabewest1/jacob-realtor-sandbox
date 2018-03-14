@@ -18,13 +18,13 @@ class Navbar1 extends React.Component {
                             Property Search
                         </ListItem>
                         <ListItem>
-                            Sell
+                            Buyers
                         </ListItem>
                         <ListItem>
-                            Buy
+                            Sellers
                         </ListItem>
                         <ListItem>
-                            About Us
+                            About
                         </ListItem>
                         <ListItem>
                             Contact
@@ -46,7 +46,7 @@ const Navbar = styled.nav`
     background: white;
     width: 100%;
     box-sizing: border-box;
-    padding: 0 15px;
+    padding: 10px 15px;
 
     * {
         cursor: pointer;
@@ -54,7 +54,7 @@ const Navbar = styled.nav`
 `
 const Information = styled.p`
     margin-top: 0;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     font-style: italic;
     font-size: 12px;
     text-align: end;
