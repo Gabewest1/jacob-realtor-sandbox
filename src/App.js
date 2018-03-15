@@ -3,6 +3,7 @@ import styled from "styled-components"
 
 import Navbar1 from "./components/Navbar1"
 import MLASearchForm from "./components/MLASearchForm"
+import MLASearchForm2 from "./components/MLASearchForm2"
 import About1 from "./components/About1"
 import About2 from "./components/About2"
 import About3 from "./components/About3"
@@ -18,53 +19,67 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <AppView>
+        
         <Navbar1 />
 
         <Header>
+
           <HeroImage src="https://www.youtube.com/embed/EXEiVQ550I8?controls=0&amp;controls=0&amp;mute=1&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;playlist=EXEiVQ550I8" width="300" height="150" frameborder="0" allowfullscreen="allowfullscreen"></HeroImage>
+
           <TintedOverlay />
 
           <HeroContent>
             <HeroTitle>YOUR NEXT HOME VENTURE STARTS HERE</HeroTitle>
-            <HeroDescription>I Make It Simple</HeroDescription>
+            <HeroDescription>My Process Makes It Simple</HeroDescription>
             <HeroButton>Buyers Process</HeroButton>
             <HeroButton>Sellers Process</HeroButton>
           </HeroContent>
+
+          <MLAFormWrapper>
+            <_MLASearchForm SearchForm />  
+          </MLAFormWrapper>
+
         </Header>
 
-        <Wrapper>
-          <MLAText>Find Your Next Home</MLAText>
-          <_MLASearchForm />
-        </Wrapper>
-
-        <div style={{ padding: "60px 0" }}>
-          <Icons />
-        </div>
-
-        <About1 />
-
+        <Icons style={{ marginTop: "40px" }} />
         <Testimonials4 />
 
         <Footer>
           <Copyright>© COPYRIGHT 2018 JACOB WEST. ALL RIGHTS RESERVED.</Copyright>
         </Footer>
-      </div>
+      </AppView>
     )
   }
 }
 
 const HeroTitle = styled.h1`
-
+  white-space: nowrap;
+  margin: 0;
+  font-family: 'Oswald', sans-serif;  
+  font-size: 50px;
+  font-weight: 100;
+  letter-spacing: 2px;
 `
 const HeroDescription = styled.p`
-
+  margin: 18px 0 27px 0;
+  font-size: 24px;
+  font-family: 'Lato', sans-serif;
 `
 const HeroButton = styled.button`
   border: solid 2px white;
   border-radius: 5px;
   padding: 15px 30px;
   background: transparent;
+  color: white;
+  margin: 0 14px;
+  cursor: pointer;
+  transition: all .2s linear;
+
+  &:hover {
+    background: white;
+    color: black;
+  }
 `
 const HeroContent = styled.div`
   position: absolute;
@@ -74,54 +89,41 @@ const HeroContent = styled.div`
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
-
-  ${ HeroButton }:first-of-type {
-    float: left;
-  }
-
-  ${ HeroButton }:last-of-type {
-    float: right;
-  }
 `
 const TintedOverlay = styled.div`
   height: 100vh;
   width: 100vw;
-  background: rgba(0,0,0,.7);
+  background: rgba(0,0,0,.6);
   position: absolute;
   left: 0;
   top: 0;
 `
-const _MLASearchForm = styled(MLASearchForm)`
+const _MLASearchForm = styled(MLASearchForm2)`
   width: 100%;
+  color: white !important;
+
+  & * {
+    background: transparent;
+  }
 `
-const MLAText = styled.h1`
-  color: white;
-  text-shadow: 2px 2px black;
-  margin-bottom: 10px;
-  margin-top: 0;
-  font-weight: 100;
-  font-family: open sans;
-  font-size: 36px;
-`
+
 const HeroImage = styled.iframe`
-  width: 300%;
-  height: 100vh;
-  position: relative;
-  left: -100%;
+  width: 100%;
+  height: 120vh;
   display: block;
   border: none;
 `
-const Wrapper = styled.div`
-  width: 100%; 
-  padding: 30px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: #d81d28;
+const MLAFormWrapper = styled.div`
+  bottom: 10%
+  left: 50%;
+  position: absolute;
+  width: 90%; 
+  transform: translateX(-50%);
 `
 const Header = styled.div`
   position: relative;
+  height: 100vh;
+  overflow: hidden;
 `
 const Copyright = styled.p`
   margin: 0;
@@ -134,5 +136,8 @@ const Footer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+`
+const AppView = styled.div`
+  
 `
 export default App

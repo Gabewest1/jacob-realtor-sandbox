@@ -4,7 +4,7 @@ import styled from "styled-components"
 export default class Icons extends React.Component {
     render() {
         return (
-            <IconsView>
+            <IconsView { ...this.props }>
                 <Wrapper>
                     <Image src="/assets/images/search-icon.svg" />
                     <Title>Find Your Dream Home</Title>
