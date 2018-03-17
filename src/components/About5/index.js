@@ -15,8 +15,8 @@ export default class About5 extends React.Component {
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores consequuntur, nostrum explicabo praesentium doloribus harum veniam vel dicta, quod labore suscipit deleniti. Omnis soluta quis ipsum natus iusto vel labore!
                          consectetur adipisicing elit. Dolores consequuntur, nostrum explicabo praesentium doloribus harum veniam vel dicta, quod labore suscipit deleniti. Omnis soluta quis ipsum natus iusto vel labore!
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores consequuntur, nostrum explicabo praesentium doloribus harum veniam vel dicta, quod labore suscipit deleniti. Omnis soluta quis ipsum natus iusto vel labore!
-                         
                     </Description>
+                    <ReadMore><a href="#">Click here</a> to learn more about me!</ReadMore>
                 </Content>
             </About5View>
         )
@@ -41,6 +41,15 @@ const Border = styled.div`
     padding: 0 15px;
     margin-right: 15px;
 `
-const Content = styled.div`
+const ReadMore = styled.div`
+    margin-top: 15px;
+    position: absolute;
+    bottom: 0;
 
+    a {
+        color: #004e95;
+    }
+`
+const Content = styled.div`
+    position: relative;
 `

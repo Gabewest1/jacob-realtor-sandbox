@@ -61,7 +61,7 @@ class App extends Component {
 
         <Icons2 color={ this.state.color } />
 
-        <div style={{ paddingTop: 30 }}>
+        <div style={{ padding: "60px 0" }}>
           <About5 />
         </div>
 
