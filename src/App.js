@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import styled from "styled-components"
 
 import Navbar1 from "./components/Navbar1"
+import Navbar2 from "./components/Navbar2"
 import MLASearchForm from "./components/MLASearchForm"
 import MLASearchForm2 from "./components/MLASearchForm2"
 import About1 from "./components/About1"
@@ -33,7 +34,7 @@ class App extends Component {
     return (
       <AppView>
         
-        <Navbar1 />
+        <Navbar2 />
 
         <Header>
 
