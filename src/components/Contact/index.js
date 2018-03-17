@@ -92,13 +92,13 @@ const Field = styled.div`
     }
 `
 const Form = styled.div`
-    width: 400px;
+    width: 350px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
     > * {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 
 `
