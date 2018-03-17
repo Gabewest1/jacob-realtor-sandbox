@@ -17,7 +17,7 @@ class Navbar1 extends React.Component {
                 <RemaxLogo />
                 <div style={{ marginLeft: 15 }}>
                     <Information>
-                        Jacob West, 512-669-9592
+                        Jacob West, 512-669-9649
                     </Information>
                     <List>
                         <ListItem>
