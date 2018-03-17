@@ -37,7 +37,7 @@ const Description = styled.div`
 
 `
 const Border = styled.div`
-    border-right: solid 5px #d32031;
+    border-right: solid 5px #5a5959;
     padding: 0 15px;
     margin-right: 15px;
 `

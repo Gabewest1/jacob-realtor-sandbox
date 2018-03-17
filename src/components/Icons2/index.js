@@ -3,7 +3,8 @@ import styled from "styled-components"
 
 export default class Icons extends React.Component {
     render() {
-        const color = "rgba(0 , 78, 129, .7)"
+        // const color = "rgba(211, 32, 49, .7)"
+        const color = "rgba(90, 89, 89, .7)"        
 
         return (
             <IconsView { ...this.props }>

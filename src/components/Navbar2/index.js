@@ -84,7 +84,7 @@ const ListItem = styled.li`
     text-align: center;
 
     &:hover {
-        color: #d81d28;
+        color: #919191;
     }
 `
 const List = styled.ul`

@@ -19,7 +19,7 @@ export default class Locations extends React.Component {
 
 const LocationsView = styled.div`
     background-color: ${({ color }) => color};
-    color: #004e95;
+    color: black;
 `
 const List = styled.ul`
     background-color: ${({ color }) => color};
@@ -31,7 +31,7 @@ const List = styled.ul`
     margin: 0;
 
     li {
-        border-right: solid 3px #d32031;
+        border-right: solid 3px #5a5959;
     }
 
     li:last-child {
@@ -49,7 +49,7 @@ const Location = styled.li`
         text-decoration: none;
 
         &:hover {
-            color: #d32031;
+            color: #919191;
         }
     }
 
