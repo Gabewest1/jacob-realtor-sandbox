@@ -32,9 +32,10 @@ const Image = styled.img`
 `
 const Title = styled.h1`
     margin-top: 0;
+    font-weight: 100;
 `
 const Description = styled.div`
-
+    max-width: 860px;
 `
 const Border = styled.div`
     border-right: solid 5px #5a5959;

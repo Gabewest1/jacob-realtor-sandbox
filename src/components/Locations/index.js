@@ -5,6 +5,10 @@ export default class Locations extends React.Component {
     render() {
         return (
             <LocationsView { ...this.props }>
+                <HorizontalBar>
+                    <Header>Your Home Here</Header>
+                </HorizontalBar>
+
                 <List color={ this.props.color }>
                     <Location><a href="#">Austin</a></Location>
                     <Location><a href="#">Round Rock</a></Location>
@@ -38,9 +42,19 @@ const List = styled.ul`
         border-right: none;
     }
 `
+const Header = styled.h1`
+    font-weight: 100;
+    text-align: center;
+    background: white;
+    padding: 0 30px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+`
 const Location = styled.li`
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 100;
+    font-family: roboto;
     flex-grow: 1;
     text-align: center;
 
@@ -53,4 +67,20 @@ const Location = styled.li`
         }
     }
 
+`
+const HorizontalBar = styled.div`
+    position: relative;
+    text-align: center;
+
+    &:after {
+        content: "";
+        background: #5a5959;
+        display: block;
+        position: absolute;
+        height: 1px;
+        width: 80%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
 `
