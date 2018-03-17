@@ -38,7 +38,7 @@ class App extends Component {
 
         <Header>
 
-          <HeroImage src="https://www.youtube.com/embed/EXEiVQ550I8?controls=0&amp;controls=0&amp;mute=1&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;playlist=EXEiVQ550I8" width="300" height="150" frameborder="0" allowfullscreen="allowfullscreen"></HeroImage>
+          <HeroImage src="https://player.vimeo.com/video/169572557?background=1&portrait=0&byline=0&title=0&badge=0&loop=1&autopause=1&api=1&rel=0&player_id=player_2_1081388825_836852567&color=a81010" width="300" height="150" frameborder="0" allowfullscreen="allowfullscreen"></HeroImage>
 
           <TintedOverlay />
 
