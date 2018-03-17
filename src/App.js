@@ -8,7 +8,10 @@ import About1 from "./components/About1"
 import About2 from "./components/About2"
 import About3 from "./components/About3"
 import About4 from "./components/About4"
+import About5 from "./components/About5"
+import Locations from "./components/Locations"
 import Icons from "./components/Icons"
+import Icons2 from "./components/Icons2"
 import Testimonials1 from "./components/Testimonials1"
 import Testimonials2 from "./components/Testimonials2"
 import Testimonials3 from "./components/Testimonials3"
@@ -17,6 +20,14 @@ import Testimonials4 from "./components/Testimonials4"
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 class App extends Component {
+  constructor() {
+    super()
+
+    this.state = {
+      // color: "#004e95"
+      color: "white"
+    }
+  }
   render() {
     return (
       <AppView>
@@ -40,9 +51,18 @@ class App extends Component {
             <_MLASearchForm SearchForm />  
           </MLAFormWrapper>
 
+          <Arrows color={ this.state.color } />
+          
         </Header>
 
-        <Icons style={{ marginTop: "40px" }} />
+        <Locations color={ this.state.color } />
+
+        <Icons2 color={ this.state.color } />
+
+        <div style={{ paddingTop: 30 }}>
+          <About5 />
+        </div>
+
         <Testimonials4 />
 
         <Footer>
@@ -53,6 +73,33 @@ class App extends Component {
   }
 }
 
+//Adds a transparent triangle between the Header and section below it.
+const Arrows = styled.div`
+    position: absolute;
+    bottom: 0;
+    height: 30px;
+    width: 100%;
+
+    &:after {
+        content: '';
+        border-bottom: solid 30px ${({ color }) => color};
+        border-left: solid 30px transparent;
+        width: 50%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+    }
+
+    &:before {
+      content: '';
+      border-bottom: solid 30px ${({ color }) => color};
+      border-right: solid 30px transparent;
+      width: 50%;
+      position: absolute;
+      top: 0;
+      right: 50%;
+  }
+`
 const HeroTitle = styled.h1`
   white-space: nowrap;
   margin: 0;
@@ -72,9 +119,11 @@ const HeroButton = styled.button`
   padding: 15px 30px;
   background: transparent;
   color: white;
+  font-size: 20px;
   margin: 0 14px;
   cursor: pointer;
   transition: all .2s linear;
+  min-width: 40%;
 
   &:hover {
     background: white;
@@ -108,10 +157,12 @@ const _MLASearchForm = styled(MLASearchForm2)`
 `
 
 const HeroImage = styled.iframe`
-  width: 100%;
+  width: 300%;
   height: 120vh;
   display: block;
   border: none;
+  position: relative;
+  left: -100%;
 `
 const MLAFormWrapper = styled.div`
   bottom: 10%
