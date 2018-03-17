@@ -11,6 +11,7 @@ import About3 from "./components/About3"
 import About4 from "./components/About4"
 import About5 from "./components/About5"
 import Contact from "./components/Contact"
+import Listings from "./components/Listings"
 import Locations from "./components/Locations"
 import Icons from "./components/Icons"
 import Icons2 from "./components/Icons2"
@@ -18,6 +19,7 @@ import Testimonials1 from "./components/Testimonials1"
 import Testimonials2 from "./components/Testimonials2"
 import Testimonials3 from "./components/Testimonials3"
 import Testimonials4 from "./components/Testimonials4"
+import Testimonials5 from "./components/Testimonials5"
 
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
@@ -67,7 +69,9 @@ class App extends Component {
 
         <Contact />
 
-        <Testimonials4 />
+        <Listings />
+
+        <Testimonials5 />
 
         <Footer>
           <Copyright>© COPYRIGHT 2018 JACOB WEST. ALL RIGHTS RESERVED.</Copyright>
