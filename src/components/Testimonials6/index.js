@@ -13,7 +13,7 @@ class Testimonials2 extends React.Component {
                 <Testimonial>
                     <div>
                         <DoubleQuoteIcon src="/assets/images/quote-icon.svg" />
-                        <Quote>{ testimonialsWithoutQuotation[0] }</Quote>
+                        <Quote>{ testimonials[0] }</Quote>
                     </div>
                     <Title>&mdash; John & Karren Witherspoon</Title>
                 </Testimonial>
@@ -21,7 +21,7 @@ class Testimonials2 extends React.Component {
                 <Testimonial>
                     <div>
                         <DoubleQuoteIcon src="/assets/images/quote-icon.svg" />
-                        <Quote>{ testimonialsWithoutQuotation[1] }</Quote>
+                        <Quote>{ testimonials[1] }</Quote>
                     </div>
                     <Title>&mdash; John & Karren Witherspoon</Title>
                 </Testimonial>
@@ -29,7 +29,7 @@ class Testimonials2 extends React.Component {
                 <Testimonial>
                     <div>
                         <DoubleQuoteIcon src="/assets/images/quote-icon.svg" />
-                        <Quote>{ testimonialsWithoutQuotation[2] }</Quote>
+                        <Quote>{ testimonials[2] }</Quote>
                     </div>
                     <Title>&mdash; John & Karren Witherspoon</Title>
                 </Testimonial>

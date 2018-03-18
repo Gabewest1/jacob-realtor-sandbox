@@ -5,6 +5,7 @@ import Navbar1 from "./components/Navbar1"
 import Navbar2 from "./components/Navbar2"
 import MLASearchForm from "./components/MLASearchForm"
 import MLASearchForm2 from "./components/MLASearchForm2"
+import MLASearchForm3 from "./components/MLASearchForm3"
 import About1 from "./components/About1"
 import About2 from "./components/About2"
 import About3 from "./components/About3"
@@ -42,18 +43,18 @@ class App extends Component {
 
         <Header>
 
-          <HeroImage src="https://player.vimeo.com/video/169572557?background=1&portrait=0&byline=0&title=0&badge=0&loop=1&autopause=1&api=1&rel=0&player_id=player_2_1081388825_836852567&color=a81010" width="300" height="150" frameborder="0" allowfullscreen="allowfullscreen"></HeroImage>
+          <HeroImage src="/assets/images/hero.jpg" />
 
           <TintedOverlay />
 
           <HeroContent>
-            <HeroTitle>YOUR NEXT HOME VENTURE STARTS HERE</HeroTitle>
-            <HeroDescription>My Process Makes It Simple</HeroDescription>
-            <HeroButton>Buyers Process</HeroButton>
-            <HeroButton>Sellers Process</HeroButton>
+            {/* <HeroDescription>My Process Makes It Simple</HeroDescription> */}
+            {/* <HeroButton>Buyers Process</HeroButton>
+            <HeroButton>Sellers Process</HeroButton> */}
           </HeroContent>
 
           <MLAFormWrapper>
+            <HeroTitle>YOUR NEXT HOME VENTURE STARTS HERE</HeroTitle>
             <_MLASearchForm SearchForm />  
           </MLAFormWrapper>
 
@@ -117,6 +118,7 @@ const HeroTitle = styled.h1`
   font-size: 50px;
   font-weight: 100;
   letter-spacing: 2px;
+  color: white;
 `
 const HeroDescription = styled.p`
   margin: 18px 0 27px 0;
@@ -143,7 +145,7 @@ const HeroButton = styled.button`
 const HeroContent = styled.div`
   position: absolute;
   color: white;
-  top: 50%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -157,7 +159,7 @@ const TintedOverlay = styled.div`
   left: 0;
   top: 0;
 `
-const _MLASearchForm = styled(MLASearchForm2)`
+const _MLASearchForm = styled(MLASearchForm3)`
   width: 100%;
   color: white !important;
 
@@ -166,20 +168,20 @@ const _MLASearchForm = styled(MLASearchForm2)`
   }
 `
 
-const HeroImage = styled.iframe`
-  width: 300%;
-  height: 120vh;
+const HeroImage = styled.div`
+  background: url(${({ src }) => src});
+  background-size: 120%;
+  width: 100%;
+  height: 100vh;
   display: block;
   border: none;
-  position: relative;
-  left: -100%;
 `
 const MLAFormWrapper = styled.div`
-  bottom: 10%
+  top: 50%
   left: 50%;
   position: absolute;
   width: 90%; 
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
 `
 const Header = styled.div`
   position: relative;
