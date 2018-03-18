@@ -15,11 +15,13 @@ import Listings from "./components/Listings"
 import Locations from "./components/Locations"
 import Icons from "./components/Icons"
 import Icons2 from "./components/Icons2"
+import Icons3 from "./components/Icons3"
 import Testimonials1 from "./components/Testimonials1"
 import Testimonials2 from "./components/Testimonials2"
 import Testimonials3 from "./components/Testimonials3"
 import Testimonials4 from "./components/Testimonials4"
 import Testimonials5 from "./components/Testimonials5"
+import Testimonials6 from "./components/Testimonials6"
 
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
@@ -59,19 +61,19 @@ class App extends Component {
           
         </Header>
 
-        <Locations color={ this.state.color } />
+        {/* <Locations color={ this.state.color } /> */}
 
-        <Icons2 color={ this.state.color } />
+        <div style={{ paddingTop: 34, paddingBottom: 34 }}>
+          <Icons3 color={ this.state.color } />
+        </div>
 
-        <div style={{ padding: "60px 0" }}>
+        <div style={{ padding: "60px 0", background: "#efefef" }}>
           <About5 />
         </div>
 
         <Contact />
 
-        <Listings />
-
-        <Testimonials5 />
+        <Testimonials6 />
 
         <Footer>
           <Copyright>© COPYRIGHT 2018 JACOB WEST. ALL RIGHTS RESERVED.</Copyright>
