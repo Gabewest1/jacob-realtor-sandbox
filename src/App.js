@@ -47,12 +47,6 @@ class App extends Component {
 
           <TintedOverlay />
 
-          <HeroContent>
-            {/* <HeroDescription>My Process Makes It Simple</HeroDescription> */}
-            {/* <HeroButton>Buyers Process</HeroButton>
-            <HeroButton>Sellers Process</HeroButton> */}
-          </HeroContent>
-
           <MLAFormWrapper>
             <HeroTitle>YOUR NEXT HOME VENTURE STARTS HERE</HeroTitle>
             <_MLASearchForm SearchForm />  
@@ -61,8 +55,6 @@ class App extends Component {
           <Arrows color={ this.state.color } />
           
         </Header>
-
-        {/* <Locations color={ this.state.color } /> */}
 
         <div style={{ paddingTop: 34, paddingBottom: 34 }}>
           <Icons3 color={ this.state.color } />
@@ -154,7 +146,7 @@ const HeroContent = styled.div`
 const TintedOverlay = styled.div`
   height: 100vh;
   width: 100vw;
-  background: rgba(0,0,0,.6);
+  background: rgba(0,0,0,.3);
   position: absolute;
   left: 0;
   top: 0;

@@ -6,7 +6,7 @@ export default class About5 extends React.Component {
         return (
             <About5View>
                 <Border>
-                    <Image src="/assets/images/lil_jacky_small.png" />
+                    <Image src="/assets/images/lil_jacky_half.png" />
                 </Border>
                 <Content>
                     <Title>Hello, I'm Jacob West</Title>
