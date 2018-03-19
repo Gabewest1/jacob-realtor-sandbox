@@ -23,6 +23,7 @@ import Testimonials3 from "./components/Testimonials3"
 import Testimonials4 from "./components/Testimonials4"
 import Testimonials5 from "./components/Testimonials5"
 import Testimonials6 from "./components/Testimonials6"
+import Testimonials7 from "./components/Testimonials7"
 
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
@@ -66,7 +67,7 @@ class App extends Component {
 
         <Contact />
 
-        <Testimonials6 />
+        <Testimonials7 />
 
         <Footer>
           <Copyright>© COPYRIGHT 2018 JACOB WEST. ALL RIGHTS RESERVED.</Copyright>
