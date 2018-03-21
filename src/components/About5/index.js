@@ -10,12 +10,14 @@ export default class About5 extends React.Component {
                 </Border>
                 <Content>
                     <Title>Hello, I'm Jacob West</Title>
-                    <Description>
-                        Lorem, ipsum dolor sit amet
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores consequuntur, nostrum explicabo praesentium doloribus harum veniam vel dicta, quod labore suscipit deleniti. Omnis soluta quis ipsum natus iusto vel labore!
-                         consectetur adipisicing elit. Dolores consequuntur, nostrum explicabo praesentium doloribus harum veniam vel dicta, quod labore suscipit deleniti. Omnis soluta quis ipsum natus iusto vel labore!
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores consequuntur, nostrum explicabo praesentium doloribus harum veniam vel dicta, quod labore suscipit deleniti. Omnis soluta quis ipsum natus iusto vel labore!
-                    </Description>
+                    <div style={{ flexGrow: 1 }}>
+                        <Description>
+                            Lorem, ipsum dolor sit amet
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores consequuntur, nostrum explicabo praesentium doloribus harum veniam vel dicta, quod labore suscipit deleniti. Omnis soluta quis ipsum natus iusto vel labore!
+                            consectetur adipisicing elit. Dolores consequuntur, nostrum explicabo praesentium doloribus harum veniam vel dicta, quod labore suscipit deleniti. Omnis soluta quis ipsum natus iusto vel labore!
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores consequuntur, nostrum explicabo praesentium doloribus harum veniam vel dicta, quod labore suscipit deleniti. Omnis soluta quis ipsum natus iusto vel labore!
+                        </Description>
+                    </div>
                     <ReadMore><a href="#">Click here</a> to learn more about me!</ReadMore>
                 </Content>
             </About5View>
@@ -35,7 +37,7 @@ const Title = styled.h1`
     font-weight: 100;
 `
 const Description = styled.div`
-    max-width: 860px;
+    max-width: 600px;
 `
 const Border = styled.div`
     border-right: solid 5px #5a5959;
@@ -44,8 +46,6 @@ const Border = styled.div`
 `
 const ReadMore = styled.div`
     margin-top: 15px;
-    position: absolute;
-    bottom: 0;
 
     a {
         color: #004e95;
@@ -53,4 +53,7 @@ const ReadMore = styled.div`
 `
 const Content = styled.div`
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 `

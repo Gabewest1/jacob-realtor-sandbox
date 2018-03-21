@@ -11,27 +11,33 @@ class Testimonials2 extends React.Component {
         return (
             <_Carousel autoPlay infiniteLoop showStatus={ false }>
                 <Testimonial>
-                    <div>
-                        <DoubleQuoteIcon src="/assets/images/quote-icon.svg" />
-                        <Quote>{ testimonials[0] }</Quote>
-                    </div>
-                    <Title>&mdash; John & Karren Witherspoon</Title>
+                    <Background>
+                        <div>
+                            <DoubleQuoteIcon src="/assets/images/quote-icon.svg" />
+                            <Quote>{ testimonials[0] }</Quote>
+                        </div>
+                        <Title>&mdash; John & Karren Witherspoon</Title>
+                    </Background>
                 </Testimonial>
 
                 <Testimonial>
-                    <div>
-                        <DoubleQuoteIcon src="/assets/images/quote-icon.svg" />
-                        <Quote>{ testimonials[1] }</Quote>
-                    </div>
-                    <Title>&mdash; John & Karren Witherspoon</Title>
+                    <Background>
+                        <div>
+                            <DoubleQuoteIcon src="/assets/images/quote-icon.svg" />
+                            <Quote>{ testimonials[1] }</Quote>
+                        </div>
+                        <Title>&mdash; John & Karren Witherspoon</Title>
+                    </Background>
                 </Testimonial>
 
                 <Testimonial>
-                    <div>
-                        <DoubleQuoteIcon src="/assets/images/quote-icon.svg" />
-                        <Quote>{ testimonials[2] }</Quote>
-                    </div>
-                    <Title>&mdash; John & Karren Witherspoon</Title>
+                    <Background>
+                        <div>
+                            <DoubleQuoteIcon src="/assets/images/quote-icon.svg" />
+                            <Quote>{ testimonials[2] }</Quote>
+                        </div>
+                        <Title>&mdash; John & Karren Witherspoon</Title>
+                    </Background>
                 </Testimonial>
             </_Carousel>
 
@@ -39,12 +45,17 @@ class Testimonials2 extends React.Component {
     }
 }
 
+const Background = styled.div`
+    background: rgba(0,0,0, .5);
+    padding: 20px;
+    border-radius: 5px;
+`
 const DoubleQuoteIcon = styled.img`
     max-width: 55px !important;
     max-height: 55px !important;
     margin-right: 15px;
     border-radius: 50%;
-    border: solid thin black !important;
+    border: solid thin white !important;
     padding: 15px;
 `
 const Title = styled.h1`
@@ -53,32 +64,33 @@ const Title = styled.h1`
 const Quote = styled.p`
     font-size: 14px;
     font-style: italic;
+    font-weight: bold;
     margin: 36px 0 25px 0;
 `
 const Testimonial = styled.div`
     padding: 70px;
-    color: black;
+    color: white;
 `
 const _Carousel = styled(Carousel)`
-    background: url(/assets/images/hero.jpg);
+    background: url(/assets/images/hero2.jpg);
     background-size: 120%;
     color: white !important;
 
     .carousel .control-next.control-arrow:before {
-        border-left-color: black !important;
+        border-left-color: #efefef !important;
     }
     
     .carousel .control-prev.control-arrow:before {
-        border-right-color: black !important;
+        border-right-color: #efefef !important;
     }
     
     .slide {
         background: transparent !important;
     }
 
-    .control-dots .dot {
-        background: black !important;
-    }
+    // .control-dots .dot {
+    //     background: black !important;
+    // }
 `
 
 export default Testimonials2

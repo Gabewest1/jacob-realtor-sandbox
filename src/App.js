@@ -12,6 +12,7 @@ import About3 from "./components/About3"
 import About4 from "./components/About4"
 import About5 from "./components/About5"
 import Contact from "./components/Contact"
+import Contact2 from "./components/Contact2"
 import Listings from "./components/Listings"
 import Locations from "./components/Locations"
 import Icons from "./components/Icons"
@@ -33,7 +34,7 @@ class App extends Component {
 
     this.state = {
       // color: "#004e95"
-      color: "white"
+      color: "#efefef"
     }
   }
   render() {
@@ -57,15 +58,11 @@ class App extends Component {
           
         </Header>
 
-        <div style={{ paddingTop: 34, paddingBottom: 34 }}>
-          <Icons3 color={ this.state.color } />
-        </div>
-
         <div style={{ padding: "60px 0", background: "#efefef" }}>
           <About5 />
         </div>
 
-        <Contact />
+        <Contact2 />
 
         <Testimonials7 />
 
