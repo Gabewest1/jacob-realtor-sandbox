@@ -2,17 +2,90 @@
   font-family: inherit
 }
 
+nav ul li {
+  font-size: 16px !important;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;  
   font-size: 14px;
+  font-family: HelveticaNeueBold;
+  font-family: HelveticaNeueBlackCond;
+  font-family: HelveticaNeueLight;
+  /* font-family: HelveticaNeueMedium; */
+  /* font-family: HelveticaNeue; */
+  /* font-family: HelveticaNeueThin; */
+  /* font-family: HelveticaNeueBd;
+  font-family: HelveticaNeueHv;
+  font-family: HelveticaNeueIt;
+  font-family: HelveticaNeueBold; */
 }
 
 h1 {
-  font-family: 'Roboto', sans-serif;
+  /* font-family: HelveticaNeueBold; */
+  /* font-family: HelveticaNeueBlackCond; */
+  /* font-family: HelveticaNeueLight; */
+  /* font-family: HelveticaNeueMedium; */
+  font-family: HelveticaNeue;
+  font-family: HelveticaNeueThin;
+  /* font-family: HelveticaNeueBd; */
+  /* font-family: HelveticaNeueHv; */
+  /* font-family: HelveticaNeueIt; */
+  /* font-family: HelveticaNeueBold; */
 }
 
 button {
   color: inherit;
+}
+
+@font-face {
+  font-family: HelveticaNeueBold;
+  src: url("/assets/fonts/helveticaneue/Helvetica Neu Bold.ttf");
+}
+
+@font-face {
+  font-family: HelveticaNeueBlackCond;
+  src: url("/assets/fonts/helveticaneue/HelveticaNeue BlackCond.ttf");
+}
+
+@font-face {
+  font-family: HelveticaNeueLight;
+  src: url("/assets/fonts/helveticaneue/HelveticaNeue Light.ttf");
+}
+
+@font-face {
+  font-family: HelveticaNeueMedium;
+  src: url("/assets/fonts/helveticaneue/HelveticaNeue Medium.ttf");
+}
+
+@font-face {
+  font-family: HelveticaNeue;
+  src: url("/assets/fonts/helveticaneue/HelveticaNeue.ttf");
+}
+
+@font-face {
+  font-family: HelveticaNeueThin;
+  src: url("/assets/fonts/helveticaneue/HelveticaNeue Thin.ttf");
+}
+
+@font-face {
+  font-family: HelveticaNeueBd;
+  src: url("/assets/fonts/helveticaneue/HelveticaNeueBd.ttf");
+}
+
+@font-face {
+  font-family: HelveticaNeueHv;
+  src: url("/assets/fonts/helveticaneue/HelveticaNeueHv.ttf");
+}
+
+@font-face {
+  font-family: HelveticaNeueIt;
+  src: url("/assets/fonts/helveticaneue/HelveticaNeueIt.ttf");
+}
+
+@font-face {
+  font-family: HelveticaNeueBold;
+  src: url("/assets/fonts/helveticaneue/HelveticaNeueLt.ttf");
 }

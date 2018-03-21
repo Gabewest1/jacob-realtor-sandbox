@@ -75,9 +75,10 @@ const Navbar = styled.nav`
 const Information = styled.p`
     margin-top: 0;
     margin-bottom: 10px;
-    font-style: italic;
-    font-size: 12px;
+    // font-style: italic;
+    font-size: 14px;
     text-align: end;
+    font-family: HelveticaNeueIt;
     cursor: default;
 `
 const ListItem = styled.li`

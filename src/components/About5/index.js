@@ -34,7 +34,6 @@ const Image = styled.img`
 `
 const Title = styled.h1`
     margin-top: 0;
-    font-weight: 100;
 `
 const Description = styled.div`
     max-width: 600px;

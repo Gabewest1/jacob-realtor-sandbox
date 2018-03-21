@@ -104,10 +104,7 @@ const Arrows = styled.div`
 const HeroTitle = styled.h1`
   white-space: nowrap;
   margin: 0;
-  font-family: 'Oswald', sans-serif;  
-  font-size: 50px;
-  font-weight: 100;
-  letter-spacing: 2px;
+  margin-bottom: 10px;
   color: white;
 `
 const HeroDescription = styled.p`

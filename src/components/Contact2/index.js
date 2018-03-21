@@ -61,7 +61,6 @@ const SubmitButton = styled.button`
     align-items: center;
     justify-content: center;
     font-size: 24px;
-    font-family: lato;
     font-weight: 100;
     border-radius: 7px;
     cursor: pointer;

@@ -63,8 +63,8 @@ const Title = styled.h1`
 `
 const Quote = styled.p`
     font-size: 14px;
-    font-style: italic;
     font-weight: bold;
+    font-family: HelveticaNeueIt;
     margin: 36px 0 25px 0;
 `
 const Testimonial = styled.div`

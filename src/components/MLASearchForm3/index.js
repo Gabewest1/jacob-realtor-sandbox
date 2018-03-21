@@ -150,6 +150,7 @@ const SearchButton = styled.button`
     width: 20%;
     background: white !important;
     font-weight: 900;
+    font-size: 18px;
     color: black;
 `
 const Field = styled.div`
