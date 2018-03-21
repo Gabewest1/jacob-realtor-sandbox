@@ -72,8 +72,12 @@ const _Carousel = styled(Carousel)`
         background: transparent !important;
     }
 
-    .control-dots .dot {
-        background: black !important;
+    .control-dots {
+        padding: 0;
+        
+        .dot {
+            background: black !important;
+        }
     }
 `
 
