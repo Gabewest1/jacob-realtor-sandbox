@@ -13,6 +13,7 @@ import About4 from "./components/About4"
 import About5 from "./components/About5"
 import Contact from "./components/Contact"
 import Contact2 from "./components/Contact2"
+import Contact3 from "./components/Contact3"
 import Listings from "./components/Listings"
 import Locations from "./components/Locations"
 import Icons from "./components/Icons"
@@ -62,7 +63,7 @@ class App extends Component {
           <About5 />
         </div>
 
-        <Contact2 />
+        <Contact3 />
 
         <Testimonials7 />
 
