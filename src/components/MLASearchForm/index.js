@@ -79,7 +79,7 @@ const Title = styled.p`
     background: black;
     background: rgb(236, 236, 236);
     border-right: ${ borderColor };
-    padding: 0 37px 0 12px;
+    padding: 0 37px 0 18px;
     position: relative;
 
     ${ Triangle }
@@ -106,6 +106,9 @@ const SearchButton = styled.button`
     border: none;
     border-right: ${ borderColor };
     width: 20%;
+    font-size: 20px;
+    background: #d61c2f;
+    color: white;
 `
 const Field = styled.div`
 

@@ -43,7 +43,7 @@ class App extends Component {
     return (
       <AppView>
         
-        <Navbar2 />
+        <Navbar1 />
 
         <Header>
 
@@ -52,7 +52,7 @@ class App extends Component {
           <TintedOverlay />
 
           <MLAFormWrapper>
-            <HeroTitle>YOUR NEXT HOME VENTURE STARTS HERE</HeroTitle>
+            <HeroTitle>YOUR NEXT HOME  STARTS HERE</HeroTitle>
             <_MLASearchForm SearchForm />  
           </MLAFormWrapper>
 
@@ -153,13 +153,8 @@ const TintedOverlay = styled.div`
   left: 0;
   top: 0;
 `
-const _MLASearchForm = styled(MLASearchForm3)`
+const _MLASearchForm = styled(MLASearchForm)`
   width: 100%;
-  color: white !important;
-
-  & * {
-    background: transparent;
-  }
 `
 
 const HeroImage = styled.div`

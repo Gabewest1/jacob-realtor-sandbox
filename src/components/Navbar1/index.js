@@ -53,8 +53,8 @@ const Navbar = styled.nav`
     }
 `
 const Information = styled.p`
-    margin-top: 0;
-    margin-bottom: 10px;
+    margin-top: 9px;
+    margin-bottom: 11px;
     font-style: italic;
     font-size: 12px;
     text-align: end;

@@ -4,6 +4,7 @@
 
 nav ul li {
   font-size: 16px !important;
+  font-family: HelveticaNeueThin;
 }
 
 body {
@@ -13,7 +14,7 @@ body {
   font-size: 14px;
   font-family: HelveticaNeueBold;
   font-family: HelveticaNeueBlackCond;
-  font-family: HelveticaNeueLight;
+  font-family: HelveticaNeueThin;
   /* font-family: HelveticaNeueMedium; */
   /* font-family: HelveticaNeue; */
   /* font-family: HelveticaNeueThin; */
@@ -24,16 +25,9 @@ body {
 }
 
 h1 {
-  /* font-family: HelveticaNeueBold; */
-  /* font-family: HelveticaNeueBlackCond; */
-  /* font-family: HelveticaNeueLight; */
-  /* font-family: HelveticaNeueMedium; */
-  font-family: HelveticaNeue;
-  font-family: HelveticaNeueThin;
-  /* font-family: HelveticaNeueBd; */
-  /* font-family: HelveticaNeueHv; */
-  /* font-family: HelveticaNeueIt; */
-  /* font-family: HelveticaNeueBold; */
+  font-family: HelveticaNeueBd;
+  font-family: HelveticaNeueBold;
+  font-family: HelveticaNeueLight;
 }
 
 button {
@@ -88,4 +82,9 @@ button {
 @font-face {
   font-family: HelveticaNeueBold;
   src: url("/assets/fonts/helveticaneue/HelveticaNeueLt.ttf");
+}
+
+@font-face {
+  font-family: HelveticaNeueMed;
+  src: url("/assets/fonts/helveticaneue/HelveticaNeueMed.ttf");
 }
