@@ -148,7 +148,7 @@ const HeroContent = styled.div`
 const TintedOverlay = styled.div`
   height: 100vh;
   width: 100vw;
-  background: rgba(0,0,0,.3);
+  background: rgba(0,0,0,.1);
   position: absolute;
   left: 0;
   top: 0;
