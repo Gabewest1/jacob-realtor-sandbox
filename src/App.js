@@ -26,6 +26,7 @@ import Testimonials4 from "./components/Testimonials4"
 import Testimonials5 from "./components/Testimonials5"
 import Testimonials6 from "./components/Testimonials6"
 import Testimonials7 from "./components/Testimonials7"
+import Testimonials8 from "./components/Testimonials8"
 
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
@@ -59,13 +60,13 @@ class App extends Component {
           
         </Header>
 
-        <div style={{ padding: "60px 0", background: "#efefef" }}>
+        <AboutWrapper style={{ padding: "60px 0", backgroundColor: "#efefef" }}>
           <About5 />
-        </div>
+        </AboutWrapper>
 
         <Contact3 />
 
-        <Testimonials7 />
+        <Testimonials6 />
 
         <Footer>
           <Copyright>© COPYRIGHT 2018 JACOB WEST. ALL RIGHTS RESERVED.</Copyright>
@@ -75,6 +76,11 @@ class App extends Component {
   }
 }
 
+const AboutWrapper = styled.div`
+  background: url(/assets/images/skyline.png) no-repeat;
+  background-size: 50%;
+  background-position: bottom right;
+`
 //Adds a transparent triangle between the Header and section below it.
 const Arrows = styled.div`
     position: absolute;
