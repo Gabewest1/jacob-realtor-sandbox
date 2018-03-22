@@ -54,8 +54,8 @@ class App extends Component {
           <TintedOverlay />
 
           <MLAFormWrapper>
-            <_MLASearchForm SearchForm />  
             <HeroTitle>YOUR NEXT HOME  STARTS HERE</HeroTitle>
+            <_MLASearchForm SearchForm />  
           </MLAFormWrapper>
 
           {/* <Arrows color={ this.state.color } /> */}
@@ -113,7 +113,7 @@ const Arrows = styled.div`
 const HeroTitle = styled.h1`
   white-space: nowrap;
   margin: 0;
-  margin-top: 10px;
+  margin-bottom: 10px;
   color: white;
   text-shadow: 2px 2px black;
 `
