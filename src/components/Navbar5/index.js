@@ -4,60 +4,82 @@ import styled from "styled-components"
 import RemaxLogo2 from "../RemaxLogo2"
 
 class Navbar1 extends React.Component {
+    constructor() {
+        super()
+
+        this.state = {
+            isBelowTheFold: false
+        }
+    }
+    componentDidMount() {
+        window.addEventListener("scroll", this._handleScroll)
+    }
+    componentWillUnmount() {
+        window.removeEventListener("scroll", this._handleScroll)
+    }
+    _handleScroll = () => {
+        const { isBelowTheFold } = this.state
+
+        if (isBelowTheFold) {
+            const didReturnAboveTheFold = window.scrollY < window.innerHeight
+
+            if (didReturnAboveTheFold) {
+                this.setState({ isBelowTheFold: false })
+            }
+        } else {
+            const didScrollBelowTheFold = window.scrollY > window.innerHeight
+
+            if (didScrollBelowTheFold) {
+                this.setState({ isBelowTheFold: true })
+            }
+        }
+    }
     render() {
+        const { isBelowTheFold } = this.state
+
         return (
-            <Navbar>
-                <Background color="transparent">
-                    <Top>
-                        <div>
-                            <RemaxLogo2 />
-                        </div>
-                        <ContactInfo>
-                            <Button style={{ position: "relative", left: -15 }}>
-                                <div style={{ display: "flex", alignItems: "center" }}>
-                                    <Icon src="/assets/images/phone-icon.svg" />
-                                </div>
-                                <Number>512-669-9592</Number>
-                            </Button>
-                            <Button>
-                                <div style={{ display: "flex", alignItems: "center", marginRight: 4 }}>
-                                    <Icon src="/assets/images/email-icon.svg" />
-                                </div>
-                                <Email>jacob.west@yahoo.com</Email>
-                            </Button>
-                        </ContactInfo>
-                    </Top>
-                </Background>
-                <Background color="transparent">
-                    <Bottom>
-                        <List>
-                            <ListItem>
-                                Property Search
-                            </ListItem>
-                            <ListItem>
-                                Buyers
-                            </ListItem>
-                            <ListItem>
-                                Sellers
-                            </ListItem>
-                            <ListItem>
-                                About
-                            </ListItem>
-                            <ListItem>
-                                Contact
-                            </ListItem>
-                        </List>
-                    </Bottom>
-                </Background>
+            <Navbar isBelowTheFold={ isBelowTheFold }>
+                <div>
+                    <RemaxLogo2 />
+                </div>
+                <div>
+                    <ContactInfo>
+                        <Button style={{ position: "relative", left: -15 }}>
+                            <div style={{ display: "flex", alignItems: "center" }}>
+                                <Icon src="/assets/images/phone-icon.svg" />
+                            </div>
+                            <Number>512-669-9592</Number>
+                        </Button>
+                        <Button>
+                            <div style={{ display: "flex", alignItems: "center", marginRight: 4 }}>
+                                <Icon src="/assets/images/email-icon.svg" />
+                            </div>
+                            <Email>jacob.west@yahoo.com</Email>
+                        </Button>
+                    </ContactInfo>
+                    <List>
+                        <ListItem>
+                            Property Search
+                        </ListItem>
+                        <ListItem>
+                            Buyers
+                        </ListItem>
+                        <ListItem>
+                            Sellers
+                        </ListItem>
+                        <ListItem>
+                            About
+                        </ListItem>
+                        <ListItem>
+                            Contact
+                        </ListItem>
+                    </List>
+                </div>
             </Navbar>
         )
     }
 }
 
-const Background = styled.div`
-    background: ${({ color }) => color};
-    padding: 0 15px;
-`
 const Icon = styled.img`
     max-width: 20px;
     width: 100%;
@@ -65,7 +87,10 @@ const Icon = styled.img`
 `
 const ContactInfo = styled.div`
     display: flex;
-    align-items: center;    
+    align-items: center;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;  
 `
 const Number = styled.span`
     margin-right: 15px;
@@ -76,38 +101,25 @@ const Button = styled.div`
     align-items: center;
     color: white;
 `
-const Top = styled.div`
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 0;
-`
-const Bottom = styled.div`
-    padding: 7px 0;
-    color: #313131;
-`
 const Navbar = styled.nav`
+    background: ${({ isBelowTheFold }) => isBelowTheFold ? "#313131" : "transparent"};
     position: fixed;
     top: 0;
     z-index:1;
     width: 100%;
     box-sizing: border-box;
     transition: background .3s ease-in-out;
-    
-    ${ Top }, ${ Bottom } {
-        max-width: 1024px;
-        margin: 0 auto;
-    
-        li, span, ${ Button }, img {
-            cursor: pointer;
-        }
-    }
+    display: flex;
+    justify-content: space-between;
+    padding 20px;
 `
 const ListItem = styled.li`
     text-align: center;
     color: white;
+    cursor: pointer;
 
     &:hover {
-        color: #014d9a;
+        color: #313131;
     }
 `
 const List = styled.ul`

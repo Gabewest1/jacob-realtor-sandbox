@@ -50,7 +50,7 @@ class App extends Component {
 
         <Header>
 
-          <HeroImage src="/assets/images/hero.jpg" />
+          <HeroImage src="/assets/images/hero2.jpg" />
 
           <TintedOverlay />
 
@@ -58,8 +58,6 @@ class App extends Component {
             <HeroTitle>YOUR NEXT HOME  STARTS HERE</HeroTitle>
             <_MLASearchForm SearchForm />  
           </MLAFormWrapper>
-
-          {/* <Arrows color={ this.state.color } /> */}
           
         </Header>
 
@@ -152,7 +150,7 @@ const HeroContent = styled.div`
 const TintedOverlay = styled.div`
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(transparent, rgba(0,0,0,.5));
+  background: linear-gradient(rgba(0,0,0,.5), transparent);
   position: absolute;
   left: 0;
   top: 0;
@@ -162,8 +160,8 @@ const _MLASearchForm = styled(MLASearchForm4)`
 `
 
 const HeroImage = styled.div`
-  background: url(${({ src }) => src});
-  background-size: 120%;
+  background: url(${({ src }) => src}) no-repeat;
+  background-size: cover;
   width: 100%;
   height: 100vh;
   display: block;
