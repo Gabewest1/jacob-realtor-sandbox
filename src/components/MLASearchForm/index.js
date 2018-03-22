@@ -77,13 +77,13 @@ const Title = styled.p`
     margin: 0;
     height: 100%;
     background: black;
-    background: #b8b8b8;
+    background: #313131;
     color: white;
     border-right: ${ borderColor };
     padding: 0 45px 0 18px;
     position: relative;
     font-size: 16px;
-    
+
     ${ Triangle }
 `
 const QueryInput = styled.input`
@@ -109,7 +109,7 @@ const SearchButton = styled.button`
     border-right: ${ borderColor };
     width: 20%;
     font-size: 20px;
-    background: #d61c2f;
+    background: #da202c;
     color: white;
 `
 const Field = styled.div`
@@ -126,7 +126,7 @@ const Container = styled.div`
     }
 `
 const Form = styled.form`
-    padding: 8px;
+    padding: 4px;
     background: white;
     position: relative;
     width: 100%;
