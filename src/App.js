@@ -114,6 +114,7 @@ const HeroTitle = styled.h1`
   margin: 0;
   margin-bottom: 10px;
   color: white;
+  text-shadow: 2px 2px black;
 `
 const HeroDescription = styled.p`
   margin: 18px 0 27px 0;
