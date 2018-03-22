@@ -5,6 +5,7 @@
 nav ul li {
   font-size: 16px !important;
   font-family: HelveticaNeueThin;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 body {
@@ -22,12 +23,16 @@ body {
   font-family: HelveticaNeueHv;
   font-family: HelveticaNeueIt;
   font-family: HelveticaNeueBold; */
+  font-family: 'Titillium Web', sans-serif;
+  
 }
 
 h1 {
   font-family: HelveticaNeueBd;
   font-family: HelveticaNeueBold;
   font-family: HelveticaNeueLight;
+  /* font-family: 'Titillium Web', sans-serif; */
+  
 }
 
 button {

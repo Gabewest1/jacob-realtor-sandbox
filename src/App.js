@@ -3,6 +3,7 @@ import styled from "styled-components"
 
 import Navbar1 from "./components/Navbar1"
 import Navbar2 from "./components/Navbar2"
+import Navbar3 from "./components/Navbar3"
 import MLASearchForm from "./components/MLASearchForm"
 import MLASearchForm2 from "./components/MLASearchForm2"
 import MLASearchForm3 from "./components/MLASearchForm3"
@@ -43,7 +44,7 @@ class App extends Component {
     return (
       <AppView>
         
-        <Navbar1 />
+        <Navbar3 />
 
         <Header>
 
@@ -56,7 +57,7 @@ class App extends Component {
             <_MLASearchForm SearchForm />  
           </MLAFormWrapper>
 
-          <Arrows color={ this.state.color } />
+          {/* <Arrows color={ this.state.color } /> */}
           
         </Header>
 
@@ -170,6 +171,7 @@ const MLAFormWrapper = styled.div`
   left: 50%;
   position: absolute;
   width: 90%; 
+  max-width: 1024px;
   transform: translate(-50%, -50%);
 `
 const Header = styled.div`
