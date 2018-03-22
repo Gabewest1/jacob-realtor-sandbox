@@ -4,6 +4,7 @@ import styled from "styled-components"
 import Navbar1 from "./components/Navbar1"
 import Navbar2 from "./components/Navbar2"
 import Navbar4 from "./components/Navbar4"
+import Navbar5 from "./components/Navbar5"
 import MLASearchForm from "./components/MLASearchForm"
 import MLASearchForm2 from "./components/MLASearchForm2"
 import MLASearchForm3 from "./components/MLASearchForm3"
@@ -45,7 +46,7 @@ class App extends Component {
     return (
       <AppView>
         
-        <Navbar4 />
+        <Navbar5 />
 
         <Header>
 
@@ -151,7 +152,7 @@ const HeroContent = styled.div`
 const TintedOverlay = styled.div`
   height: 100vh;
   width: 100vw;
-  background: rgba(0,0,0,.1);
+  background: linear-gradient(transparent, rgba(0,0,0,.5));
   position: absolute;
   left: 0;
   top: 0;
