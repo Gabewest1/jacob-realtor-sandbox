@@ -77,7 +77,7 @@ const Title = styled.p`
     margin: 0;
     height: 100%;
     background: black;
-    background: rgb(236, 236, 236);
+    background: #b8b8b8;
     border-right: ${ borderColor };
     padding: 0 37px 0 18px;
     position: relative;

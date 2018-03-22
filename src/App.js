@@ -66,7 +66,7 @@ class App extends Component {
 
         <Contact3 />
 
-        <Testimonials6 />
+        <Testimonials4 />
 
         <Footer>
           <Copyright>© COPYRIGHT 2018 JACOB WEST. ALL RIGHTS RESERVED.</Copyright>
