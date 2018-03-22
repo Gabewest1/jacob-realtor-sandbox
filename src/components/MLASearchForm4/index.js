@@ -119,18 +119,19 @@ const Container = styled.div`
     border: ${ borderColor };
     display: flex;
     align-items: center;
-    height: 46px;
+    height: 40px;
 
     > * {
         height: 100%;
     }
 `
 const Form = styled.form`
-    padding: 4px;
+    padding: 8px;
     background: #787878ed;
     position: relative;
     width: 100%;
     box-sizing: border-box;
+    width: 100%;
     
     @media (max-width: 854px) {
         padding-bottom: 61px;

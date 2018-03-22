@@ -31,7 +31,8 @@ h1 {
   font-family: HelveticaNeueBd;
   font-family: HelveticaNeueBold;
   font-family: HelveticaNeueLight;
-  /* font-family: 'Titillium Web', sans-serif; */
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: lighter;
   
 }
 

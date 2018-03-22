@@ -55,7 +55,7 @@ class App extends Component {
           <TintedOverlay />
 
           <MLAFormWrapper>
-            <HeroTitle>YOUR NEXT HOME  STARTS HERE</HeroTitle>
+            <HeroTitle>Quick Search</HeroTitle>
             <_MLASearchForm SearchForm />  
           </MLAFormWrapper>
           
@@ -111,10 +111,12 @@ const Arrows = styled.div`
 `
 const HeroTitle = styled.h1`
   white-space: nowrap;
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 10px;
   color: white;
-  text-shadow: 2px 2px black;
+  // font-family: HelveticaNeueThin;
+  text-align: center;
+  font-size: 40px;
 `
 const HeroDescription = styled.p`
   margin: 18px 0 27px 0;
@@ -168,12 +170,11 @@ const HeroImage = styled.div`
   border: none;
 `
 const MLAFormWrapper = styled.div`
-  top: 78%
+  bottom: 0%
   left: 50%;
   position: absolute;
-  width: 90%; 
-  max-width: 1024px;
-  transform: translate(-50%, -50%);
+  width: 100%;
+  transform: translate(-50%, 0%);
 `
 const Header = styled.div`
   position: relative;
