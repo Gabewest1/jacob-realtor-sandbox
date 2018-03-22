@@ -49,7 +49,7 @@ class Navbar1 extends React.Component {
                             <div style={{ display: "flex", alignItems: "center" }}>
                                 <Icon src="/assets/images/phone-icon.svg" />
                             </div>
-                            <Number>512-669-9592</Number>
+                            <Number>512-669-9649</Number>
                         </Button>
                         <Button>
                             <div style={{ display: "flex", alignItems: "center", marginRight: 4 }}>

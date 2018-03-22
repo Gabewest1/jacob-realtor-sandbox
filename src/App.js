@@ -53,6 +53,9 @@ class App extends Component {
           <HeroImage src="/assets/images/hero2.jpg" />
 
           <TintedOverlay />
+          <Content>
+
+          </Content>
 
           <MLAFormWrapper>
             <HeroTitle>Quick Search</HeroTitle>
@@ -76,6 +79,10 @@ class App extends Component {
     )
   }
 }
+
+const Content = styled.div`
+
+`
 
 const AboutWrapper = styled.div`
   background: url(/assets/images/skyline.png) no-repeat;
