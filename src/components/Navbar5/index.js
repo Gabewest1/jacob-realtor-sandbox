@@ -8,7 +8,8 @@ class Navbar1 extends React.Component {
         super()
 
         this.state = {
-            isBelowTheFold: false
+            isBelowTheFold: false,
+            belowTheFoldPosition: window.innerHeight - (window.innerHeight * .3)
         }
     }
     componentDidMount() {
@@ -18,16 +19,16 @@ class Navbar1 extends React.Component {
         window.removeEventListener("scroll", this._handleScroll)
     }
     _handleScroll = () => {
-        const { isBelowTheFold } = this.state
+        const { isBelowTheFold, belowTheFoldPosition } = this.state
 
         if (isBelowTheFold) {
-            const didReturnAboveTheFold = window.scrollY < window.innerHeight
+            const didReturnAboveTheFold = window.scrollY < belowTheFoldPosition
 
             if (didReturnAboveTheFold) {
                 this.setState({ isBelowTheFold: false })
             }
         } else {
-            const didScrollBelowTheFold = window.scrollY > window.innerHeight
+            const didScrollBelowTheFold = window.scrollY > belowTheFoldPosition
 
             if (didScrollBelowTheFold) {
                 this.setState({ isBelowTheFold: true })
@@ -39,7 +40,7 @@ class Navbar1 extends React.Component {
 
         return (
             <Navbar isBelowTheFold={ isBelowTheFold }>
-                <div>
+                <div style={{ display: "flex", alignItems: "center" }}>
                     <RemaxLogo2 />
                 </div>
                 <div>
@@ -111,7 +112,7 @@ const Navbar = styled.nav`
     transition: background .3s ease-in-out;
     display: flex;
     justify-content: space-between;
-    padding 20px;
+    padding: 20px 30px;
 `
 const ListItem = styled.li`
     text-align: center;
@@ -119,7 +120,7 @@ const ListItem = styled.li`
     cursor: pointer;
 
     &:hover {
-        color: #313131;
+        color: #a2a2a2;
     }
 `
 const List = styled.ul`
