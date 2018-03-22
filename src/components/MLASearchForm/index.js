@@ -36,7 +36,7 @@ class MLASearchForm extends React.Component {
                         </Options>
                     </Option>
                     <Option>
-                        <Title>Rooms</Title>
+                        <Title>Rooms/Baths</Title>
                         <Options>
                             <Field>
                                 <label htmlFor="">Beds</label>                        
@@ -65,7 +65,7 @@ const Triangle = `
         border-left: 6px solid transparent;
         border-right: 6px solid transparent;
         
-        border-top: 6px solid black;
+        border-top: 6px solid white;
     }
 `
 const Input = styled.input`
@@ -78,10 +78,12 @@ const Title = styled.p`
     height: 100%;
     background: black;
     background: #b8b8b8;
+    color: white;
     border-right: ${ borderColor };
-    padding: 0 37px 0 18px;
+    padding: 0 45px 0 18px;
     position: relative;
-
+    font-size: 16px;
+    
     ${ Triangle }
 `
 const QueryInput = styled.input`

@@ -9,7 +9,7 @@ export default class About5 extends React.Component {
                     <Image src="/assets/images/lil_jacky_half.png" />
                 </Border>
                 <Content>
-                    <Title>Hello, I'm Jacob West</Title>
+                    <Title>Meet Jacob West</Title>
                     <div style={{ flexGrow: 1 }}>
                         <Description>
                             Lorem, ipsum dolor sit amet
@@ -34,6 +34,7 @@ const Image = styled.img`
 `
 const Title = styled.h1`
     margin-top: 0;
+    text-transform: uppercase;
 `
 const Description = styled.div`
     max-width: 600px;
