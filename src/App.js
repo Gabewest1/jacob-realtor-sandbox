@@ -7,6 +7,7 @@ import Navbar4 from "./components/Navbar4"
 import MLASearchForm from "./components/MLASearchForm"
 import MLASearchForm2 from "./components/MLASearchForm2"
 import MLASearchForm3 from "./components/MLASearchForm3"
+import MLASearchForm4 from "./components/MLASearchForm4"
 import About1 from "./components/About1"
 import About2 from "./components/About2"
 import About3 from "./components/About3"
@@ -155,7 +156,7 @@ const TintedOverlay = styled.div`
   left: 0;
   top: 0;
 `
-const _MLASearchForm = styled(MLASearchForm)`
+const _MLASearchForm = styled(MLASearchForm4)`
   width: 100%;
 `
 

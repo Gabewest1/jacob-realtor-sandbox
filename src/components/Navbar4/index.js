@@ -7,7 +7,7 @@ class Navbar1 extends React.Component {
     render() {
         return (
             <Navbar>
-                <Background color="white">
+                <Background color="#313131">
                     <Top>
                         <div>
                             <RemaxLogo2 />
@@ -28,7 +28,7 @@ class Navbar1 extends React.Component {
                         </ContactInfo>
                     </Top>
                 </Background>
-                <Background color="#da202c">
+                <Background color="#ececec">
                     <Bottom>
                         <List>
                             <ListItem>
@@ -74,14 +74,16 @@ const Email = styled.span``
 const Button = styled.div`
     display: flex;
     align-items: center;
+    color: white;
 `
 const Top = styled.div`
     display: flex;
     justify-content: space-between;
+    padding: 10px 0;
 `
 const Bottom = styled.div`
-    padding: 15px 0;
-    color: white;
+    padding: 7px 0;
+    color: #313131;
 `
 const Navbar = styled.nav`
     background: white;
@@ -90,8 +92,6 @@ const Navbar = styled.nav`
     z-index:1;
     width: 100%;
     box-sizing: border-box;
-    padding: 10px 0;
-    padding-bottom: 0;
     transition: background .3s ease-in-out;
     
     ${ Top }, ${ Bottom } {
