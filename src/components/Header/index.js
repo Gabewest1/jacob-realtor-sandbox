@@ -17,7 +17,7 @@ export default class Header extends React.Component {
         return (
             <HeaderView>
 
-                <HeroImage src="/assets/images/hero2.jpg" />
+                <HeroImage src="/assets/images/hero7.jpg" />
 
                 <TintedOverlay />
 
@@ -84,6 +84,7 @@ const HeaderView = styled.div`
 const TintedOverlay = styled.div`
   height: 100vh;
   width: 100vw;
+  background: linear-gradient(transparent, rgba(0,0,0,.8));
   background: linear-gradient(rgba(0,0,0,.8), transparent);
   position: absolute;
   left: 0;
