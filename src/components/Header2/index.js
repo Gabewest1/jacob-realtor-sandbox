@@ -46,3 +46,11 @@ const Header = styled.div`
   height: 100vh;
   overflow: hidden;
 `
+const HeroTitle = styled.h1`
+  white-space: nowrap;
+  margin: 0;
+  margin-top: 10px;
+  color: white;
+  font-size: 40px;
+  font-weight: bolder;
+`
