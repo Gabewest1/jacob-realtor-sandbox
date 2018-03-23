@@ -17,6 +17,7 @@ import About5 from "./components/About5"
 import Contact from "./components/Contact"
 import Contact2 from "./components/Contact2"
 import Contact3 from "./components/Contact3"
+import Header from "./components/Header"
 import Listings from "./components/Listings"
 import Locations from "./components/Locations"
 import Icons from "./components/Icons"
@@ -48,21 +49,7 @@ class App extends Component {
         
         <Navbar5 />
 
-        <Header>
-
-          <HeroImage src="/assets/images/hero2.jpg" />
-
-          <TintedOverlay />
-          <Content>
-
-          </Content>
-
-          <MLAFormWrapper>
-            <HeroTitle>Quick Search</HeroTitle>
-            <_MLASearchForm SearchForm />  
-          </MLAFormWrapper>
-          
-        </Header>
+        <Header />
 
         <AboutWrapper style={{ padding: "60px 0", backgroundColor: "#efefef" }}>
           <About5 />
@@ -79,10 +66,6 @@ class App extends Component {
     )
   }
 }
-
-const Content = styled.div`
-
-`
 
 const AboutWrapper = styled.div`
   background: url(/assets/images/skyline.png) no-repeat;
@@ -115,78 +98,6 @@ const Arrows = styled.div`
       top: 0;
       right: 50%;
   }
-`
-const HeroTitle = styled.h1`
-  white-space: nowrap;
-  margin: 0 auto;
-  margin-bottom: 10px;
-  color: white;
-  // font-family: HelveticaNeueThin;
-  text-align: center;
-  font-size: 40px;
-`
-const HeroDescription = styled.p`
-  margin: 18px 0 27px 0;
-  font-size: 24px;
-  font-family: 'Lato', sans-serif;
-`
-const HeroButton = styled.button`
-  border: solid 2px white;
-  border-radius: 5px;
-  padding: 15px 30px;
-  background: transparent;
-  color: white;
-  font-size: 20px;
-  margin: 0 14px;
-  cursor: pointer;
-  transition: all .2s linear;
-  min-width: 40%;
-
-  &:hover {
-    background: white;
-    color: black;
-  }
-`
-const HeroContent = styled.div`
-  position: absolute;
-  color: white;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-align: center;
-`
-const TintedOverlay = styled.div`
-  height: 100vh;
-  width: 100vw;
-  background: linear-gradient(rgba(0,0,0,.5), transparent);
-  position: absolute;
-  left: 0;
-  top: 0;
-`
-const _MLASearchForm = styled(MLASearchForm4)`
-  width: 100%;
-`
-
-const HeroImage = styled.div`
-  background: url(${({ src }) => src}) no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
-  display: block;
-  border: none;
-`
-const MLAFormWrapper = styled.div`
-  bottom: 0%
-  left: 50%;
-  position: absolute;
-  width: 100%;
-  transform: translate(-50%, 0%);
-`
-const Header = styled.div`
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
 `
 const Copyright = styled.p`
   margin: 0;
