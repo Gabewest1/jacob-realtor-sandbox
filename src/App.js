@@ -19,6 +19,7 @@ import Contact from "./components/Contact"
 import Contact2 from "./components/Contact2"
 import Contact3 from "./components/Contact3"
 import Header from "./components/Header"
+import Header2 from "./components/Header2"
 import Listings from "./components/Listings"
 import Locations from "./components/Locations"
 import Icons from "./components/Icons"
@@ -50,7 +51,7 @@ class App extends Component {
         
         <Navbar6 />
 
-        <Header />
+        <Header2 />
 
         <AboutWrapper style={{ padding: "60px 0", backgroundColor: "#efefef" }}>
           <About5 />
