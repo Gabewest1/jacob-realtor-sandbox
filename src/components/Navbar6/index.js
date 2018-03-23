@@ -43,49 +43,32 @@ class Navbar1 extends React.Component {
                 <div style={{ display: "flex", alignItems: "center" }}>
                     <RemaxLogo2 />
                 </div>
-                <div>
-                    <ContactInfo>
-                        <Button style={{ position: "relative", left: -15 }}>
-                            <div style={{ display: "flex", alignItems: "center" }}>
-                                <Icon src="/assets/images/phone-icon.svg" />
-                            </div>
-                            <Number>512-669-9649</Number>
-                        </Button>
-                        <Button>
-                            <div style={{ display: "flex", alignItems: "center", marginRight: 4 }}>
-                                <Icon src="/assets/images/email-icon.svg" />
-                            </div>
-                            <Email>jacob.west@yahoo.com</Email>
-                        </Button>
-                    </ContactInfo>
-                    <List>
-                        <ListItem>
-                            Property Search
-                        </ListItem>
-                        <ListItem>
-                            Buyers
-                        </ListItem>
-                        <ListItem>
-                            Sellers
-                        </ListItem>
-                        <ListItem>
-                            About
-                        </ListItem>
-                        <ListItem>
-                            Contact
-                        </ListItem>
-                    </List>
-                </div>
+                <List>
+                    <ListItem>
+                        Property Search
+                    </ListItem>
+                    <ListItem>
+                        Buyers
+                    </ListItem>
+                    <ListItem>
+                        Sellers
+                    </ListItem>
+                    <ListItem>
+                        About
+                    </ListItem>
+                    <ListItem>
+                        Contact
+                    </ListItem>
+                </List>
+                <ContactInfo>
+                    <Email>(call/text)</Email>
+                    <Number>512 669 9649</Number>
+                </ContactInfo>
             </Navbar>
         )
     }
 }
 
-const Icon = styled.img`
-    max-width: 20px;
-    width: 100%;
-    margin-right: 5px;
-`
 const ContactInfo = styled.div`
     display: flex;
     align-items: center;
@@ -97,11 +80,6 @@ const Number = styled.span`
     margin-right: 15px;
 `
 const Email = styled.span``
-const Button = styled.div`
-    display: flex;
-    align-items: center;
-    color: white;
-`
 const Navbar = styled.nav`
     background: ${({ isBelowTheFold }) => isBelowTheFold ? "#313131" : "transparent"};
     position: fixed;
@@ -112,7 +90,7 @@ const Navbar = styled.nav`
     transition: background .3s ease-in-out;
     display: flex;
     justify-content: space-between;
-    padding: 20px 30px;
+    padding: 10px 30px;
 `
 const ListItem = styled.li`
     text-align: center;
