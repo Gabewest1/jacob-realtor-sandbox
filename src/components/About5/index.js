@@ -16,6 +16,12 @@ export default class About5 extends React.Component {
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores consequuntur, nostrum explicabo praesentium doloribus harum veniam vel dicta, quod labore suscipit deleniti. Omnis soluta quis ipsum natus iusto vel labore!
                             consectetur adipisicing elit. Dolores consequuntur, nostrum explicabo praesentium doloribus harum veniam vel dicta, quod labore suscipit deleniti. Omnis soluta quis ipsum natus iusto vel labore!
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores consequuntur, nostrum explicabo praesentium doloribus harum veniam vel dicta, quod labore suscipit deleniti. Omnis soluta quis ipsum natus iusto vel labore!
+                            <br />
+                            <br />
+                            Lorem, ipsum dolor sit amet
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores consequuntur, nostrum explicabo praesentium doloribus harum veniam vel dicta, quod labore suscipit deleniti. Omnis soluta quis ipsum natus iusto vel labore!
+                            consectetur adipisicing elit. Dolores consequuntur, nostrum explicabo praesentium doloribus harum veniam vel dicta, quod labore suscipit deleniti. Omnis soluta quis ipsum natus iusto vel labore!
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores consequuntur, nostrum explicabo praesentium doloribus harum veniam vel dicta, quod labore suscipit deleniti. Omnis soluta quis ipsum natus iusto vel labore!
                         </Description>
                     </div>
                     <ReadMore><a href="#">Click here</a> to learn more about me!</ReadMore>

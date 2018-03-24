@@ -56,7 +56,7 @@ const SubmitButton = styled.button`
     width: 100%;
     margin: 0 auto;
     display: block;
-    background: #d42235;
+    background: #bb2330;
     border: solid thin white;;
     height: 50px;
     display: flex;
@@ -100,7 +100,7 @@ const Form = styled.div`
     justify-content: space-between;
 `
 const ContactView = styled.div`
-    background: url(/assets/images/inside_house2.jpg);
+    background: url(/assets/images/hero3.jpg);
     background-attachment: fixed;
     background-size: cover;
     display: flex;
