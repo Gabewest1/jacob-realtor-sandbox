@@ -1,0 +1,188 @@
+.about-container {
+    width: 100%;
+    // height: 1250px;
+    background-color: #ffffff;
+    color: #2d2d2d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 20;
+    text-align: center;
+    height: 1185px;
+    left: 40px;
+    // border: rgba(138, 138, 138, 0.222) 1px solid;
+
+    // padding-left: 230px;
+    // padding-top: 470px;
+    // padding-bottom: 457px;
+    // box-sizing: border-box;
+    
+    // border: black 1px solid;
+    // font-family: carnasLig;
+    // font-family: Halis;
+    // font-family: HalisLight;
+    // font-family: HalisBold;
+    // font-family: CarnasBold;
+    // font-family: LeagueGothic;
+    // font-family: AntiLight;
+    // font-family: AntiMed;
+    // font-family: AntiThin;
+    // font-family: Proxima;
+    // font-family: Museo;
+    // font-family: Commons;
+    // font-family: Avertacy;
+    // font-family: Gil;
+    // font-family: Sofia;
+    // font-family: SofiaIt;
+    
+}
+
+.jacob-container {
+    display: flex;
+    position: relative;
+    position: relative;
+    right: 200px;
+    bottom: 35px;
+}
+
+.buy-sell-header {
+    font-size: 36px;
+    position: relative;
+    top: 155px;
+    left: 285px;
+    color: #1f1f1f; 
+    width: 500px;  
+    font-family: 'Open Sans';
+    font-family: Helvetica;
+    font-family: HelveticaNeue;
+    white-space: nowrap;
+    letter-spacing: -.1rem;
+}
+
+.about-header {
+    font-size: 36px;
+    position: relative;
+    top: 285px;
+    right: 250px;
+    color: #1f1f1f;
+    // border-bottom: #c1c1c1 1px solid;
+    box-sizing: border-box;
+    padding: .13em 0em;
+    padding-right: 1.5em;
+    white-space: nowrap;
+    width: 80%;
+    letter-spacing: -.1rem;
+    text-align: center;
+    // margin: 0 auto;
+    // align-self: flex-end;
+    // text-transform: uppercase;
+    // font-family: carnasLig;
+    // font-family: Halis;
+    // font-family: HalisLight;
+    // font-family: HalisBold;
+    // font-family: CarnasBold;
+    // font-family: LeagueGothic;
+    // font-family: AntiLight;
+    // font-family: AntiMed;
+    // font-family: AntiThin;
+    // font-family: Proxima;
+    // font-family: Museo;
+    // font-family: Commons;
+    // font-family: CeraPro;
+    // font-family: Avertacy;
+    // font-family: Gil;
+    // font-family: Sofia;
+    // font-family: SofiaIt;
+    // font-family: 'Montserrat', sans-serif;
+
+    // font-family: 'Montserrat Subrayada', sans-serif;
+    // font-family: 'Roboto Condensed', sans-serif;
+    // font-family: carnasLig;
+    // font-family: Proxima;
+    // font-family: CarnasBold;
+    // font-family: LeagueGothic;
+    // font-family: AntiLight;
+    // font-family: ProximaNovaThin;
+    // font-family: 'Open Sans', sans-serif;
+    // font-family: ProximaSoft;
+    font-family: Mont;
+    font-family: AcherusLight;
+    font-family: AutorLight;
+    font-family: AutorThin;
+    font-family: AutorThinIt;
+    font-family: Avertacy;
+    font-family: Helvetica;
+    font-family: HelveticaNeue;
+    // font-family: 'Open Sans';
+    // font-weight: bold;
+
+}
+
+.line {
+    width: 51px;
+    height: 2px;
+    position: relative;
+    top: 292px;
+    right: 460px;
+    background-color: rgb(75, 75, 75);
+}
+
+.line2 {
+    width: 130px;
+    height: 2px;
+    position: relative;
+    top: 191px;
+    right: -180px;
+    background-color: rgb(75, 75, 75);
+}
+
+.about-paragraph {
+    // font-family: HalisLight;
+    // font-family: ProximaNovaThin;
+    
+    // font-family: Proxima;    
+    font-size: 16px;
+    line-height: 1.47em;
+    position: relative;
+    top: 330px;
+    right: 262px;
+    width: 80%;
+    margin: 0 auto;
+    color: #0c0c0c;
+    // font-family: Questa;
+    // font-family: Isabel;
+    // font-family: Avertacy;
+    // font-family: SinaNova;
+    font-family: AdobeCaslon;
+    // font-family: Calluna;
+    // font-family: Begum;
+
+    span {
+        color: rgb(9, 132, 172);
+        &:hover{
+            color: rgb(0, 112, 150);
+            cursor: pointer;
+        }
+    }
+}
+
+
+.jacob {
+    position: relative;
+    top: 388px;
+    left: 674px;
+    width: 196px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.15);
+}
+
+.about-text {
+    width: 400px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+    left: 354px;
+}

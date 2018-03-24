@@ -1,0 +1,255 @@
+@import 'navbar';
+@import 'hero';
+@import 'mls';
+@import 'about';
+@import 'testimonials';
+@import 'footer';
+@import 'contact';
+@import 'buysell';
+
+@font-face {
+    font-family: carnasLig;
+    src: url("./fonts/carnas-lig.otf"); 
+}
+  
+
+@font-face {
+    font-family: Halis;
+    src: url("./fonts/Halis.otf"); 
+}
+
+@font-face {
+    font-family: HalisLight;
+    src: url("./fonts/Halis-light.otf"); 
+}
+
+@font-face {
+    font-family: HalisBold;
+    src: url("./fonts/Halis-bold.otf"); 
+}
+
+@font-face {
+    font-family: CarnasBold;
+    src: url("./fonts/Carnas-bold.otf"); 
+}
+
+
+@font-face {
+    font-family: LeagueGothic;
+    src: url("./fonts/LeagueGothic-Regular.otf"); 
+}
+
+@font-face {
+    font-family: AntiBold;
+    src: url("./fonts/Anti-bold.otf"); 
+}
+
+@font-face {
+    font-family: AntiLight;
+    src: url("./fonts/Anti-light.otf"); 
+}
+
+@font-face {
+    font-family: AntiMed;
+    src: url("./fonts/Anti-med.otf"); 
+}
+
+@font-face {
+    font-family: AntiThin;
+    src: url("./fonts/Anti-thin.otf"); 
+}
+
+@font-face {
+    font-family: Proxima;
+    src: url("./fonts/Proxima.otf"); 
+}
+
+@font-face {
+    font-family: Museo;
+    src: url("./fonts/Museo-300.otf"); 
+}
+
+@font-face {
+    font-family: Commons;
+    src: url("./fonts/Commons-light.otf"); 
+}
+
+@font-face {
+    font-family: AvertacyLight;
+    src: url("./fonts/Avertacy-light.otf"); 
+}
+
+
+@font-face {
+    font-family: Avertacy;
+    src: url("./fonts/Avertacy-reg.otf"); 
+}
+
+
+
+@font-face {
+    font-family: AvertacyMed;
+    src: url("./fonts/Avertacy-med.otf"); 
+}
+
+@font-face {
+    font-family: Gil;
+    src: url("./fonts/Gil.TTF"); 
+}
+
+@font-face {
+    font-family: Sofia;
+    src: url("./fonts/Sofia-med.otf"); 
+}
+
+@font-face {
+    font-family: SofiaIt;
+    src: url("./fonts/Sofia-med-it.otf"); 
+}
+
+
+@font-face {
+    font-family: ProximaNova;
+    src: url("./fonts/Proxima-nova.otf"); 
+}
+
+
+@font-face {
+    font-family: ProximaNovaThin;
+    src: url("./fonts/Proxima-nova-thin.otf"); 
+}
+
+
+@font-face {
+    font-family: ProximaNovaMed;
+    src: url("./fonts/Proxima-nova-med.otf"); 
+}
+
+
+@font-face {
+    font-family: ProximaNovaIt;
+    src: url("./fonts/Proxima-nova-it.otf"); 
+}
+
+
+@font-face {
+    font-family: ProximaSoft;
+    src: url("./fonts/Proxima-soft.otf"); 
+}
+
+
+
+
+@font-face {
+    font-family: ProximaSoftThin;
+    src: url("./fonts/Proxima-soft-thin.otf"); 
+}
+
+
+@font-face {
+    font-family: ProximaSoftMed;
+    src: url("./fonts/Proxima-soft-med.otf"); 
+}
+
+
+@font-face {
+    font-family: CeraPro;
+    src: url("./fonts/cerapro-regular.otf"); 
+}
+
+@font-face {
+    font-family: Questa;
+    src: url("./fonts/Questa.otf"); 
+}
+
+@font-face {
+    font-family: Isabel;
+    src: url("./fonts/Isabel.otf"); 
+}
+
+@font-face {
+    font-family: SinaNova;
+    src: url("./fonts/SinaNova-exta-light.otf"); 
+}
+
+@font-face {
+    font-family: Mont;
+    src: url("./fonts/Mont.otf"); 
+}
+
+@font-face {
+    font-family: AcherusLight;
+    src: url("./fonts/Acherus-light.otf"); 
+}
+
+@font-face {
+    font-family: AutorLight;
+    src: url("./fonts/Autor-light.otf"); 
+}
+
+@font-face {
+    font-family: AutorThin;
+    src: url("./fonts/Autor-thin.otf"); 
+}
+
+@font-face {
+    font-family: AutorThinIt;
+    src: url("./fonts/Autor-thin-it.otf"); 
+}
+
+@font-face {
+    font-family: AdobeCaslon;
+    src: url("./fonts/Adobe-caslon-regular.ttf"); 
+}
+
+@font-face {
+    font-family: Calluna;
+    src: url("./fonts/Calluna.otf"); 
+}
+
+@font-face {
+    font-family: Begum;
+    src: url("./fonts/Begum-medium.otf"); 
+}
+
+@font-face {
+    font-family: HelveticaNeue;
+    src: url("./fonts/HelveticaNeueCyr-Roman.otf"); 
+}
+
+@font-face {
+    font-family: HelveticaNeueCondMed;
+    src: url("./fonts/HelveticaMedCd.ttf"); 
+}
+
+
+.carousel .control-dots .dot {
+    background-color: rgb(26, 26, 26) !important;
+}
+
+.carousel .control-next.control-arrow:before {
+    border-left-color: black !important;
+}
+
+.carousel .control-prev.control-arrow:before {
+    border-right-color: black !important;
+}
+
+
+// font-family: carnasLig;
+// font-family: Halis;
+// font-family: HalisLight;
+// font-family: HalisBold;
+// font-family: CarnasBold;
+// font-family: LeagueGothic;
+// font-family: AntiLight;
+// font-family: AntiMed;
+// font-family: AntiThin;
+// font-family: Proxima;
+// font-family: Museo;
+// font-family: Commons;
+// font-family: Avertacy;
+// font-family: Gil;
+// font-family: Sofia;
+// font-family: SofiaIt;
+

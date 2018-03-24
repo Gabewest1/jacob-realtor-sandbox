@@ -1,15 +1,6 @@
 import React, { Component } from 'react'
 import styled from "styled-components"
 
-import Navbar1 from "./components/Navbar1"
-import Navbar2 from "./components/Navbar2"
-import Navbar4 from "./components/Navbar4"
-import Navbar5 from "./components/Navbar5"
-import Navbar6 from "./components/Navbar6"
-import MLASearchForm from "./components/MLASearchForm"
-import MLASearchForm2 from "./components/MLASearchForm2"
-import MLASearchForm3 from "./components/MLASearchForm3"
-import MLASearchForm4 from "./components/MLASearchForm4"
 import About1 from "./components/About1"
 import About2 from "./components/About2"
 import About3 from "./components/About3"
@@ -18,8 +9,6 @@ import About5 from "./components/About5"
 import Contact from "./components/Contact"
 import Contact2 from "./components/Contact2"
 import Contact3 from "./components/Contact3"
-import Header from "./components/Header"
-import Header2 from "./components/Header2"
 import Listings from "./components/Listings"
 import Locations from "./components/Locations"
 import Icons from "./components/Icons"
@@ -33,6 +22,10 @@ import Testimonials5 from "./components/Testimonials5"
 import Testimonials6 from "./components/Testimonials6"
 import Testimonials7 from "./components/Testimonials7"
 import Testimonials8 from "./components/Testimonials8"
+
+/* Michaels components */
+import Navbar from "./michael/components/Navbar.js"
+import Hero from "./michael/components/Hero.js"
 
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
@@ -49,9 +42,9 @@ class App extends Component {
     return (
       <AppView>
         
-        <Navbar6 />
+        <Navbar />
 
-        <Header2 />
+        <Hero />
 
         <AboutWrapper style={{ padding: "60px 0", backgroundColor: "#efefef" }}>
           <About5 />

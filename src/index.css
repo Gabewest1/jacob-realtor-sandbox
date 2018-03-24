@@ -2,29 +2,12 @@
   font-family: inherit
 }
 
-nav ul li {
-  font-size: 16px !important;
-  font-family: HelveticaNeueThin;
-  font-family: 'Titillium Web', sans-serif;
-}
-
 body {
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;  
   font-size: 14px;
-  font-family: HelveticaNeueBold;
-  font-family: HelveticaNeueBlackCond;
-  font-family: HelveticaNeueThin;
-  /* font-family: HelveticaNeueMedium; */
-  /* font-family: HelveticaNeue; */
-  /* font-family: HelveticaNeueThin; */
-  /* font-family: HelveticaNeueBd;
-  font-family: HelveticaNeueHv;
-  font-family: HelveticaNeueIt;
-  font-family: HelveticaNeueBold; */
-  font-family: 'Titillium Web', sans-serif;
-  
+  font-family: avertacy;
 }
 
 h1 {
@@ -94,3 +77,24 @@ button {
   font-family: HelveticaNeueMed;
   src: url("/assets/fonts/helveticaneue/HelveticaNeueMed.ttf");
 }
+
+@font-face {
+  font-family: AvertacyBold;
+  src: url("/assets/fonts/avertacy-bold.otf");
+}
+
+@font-face {
+  font-family: AvertacyLight;
+  src: url("/assets/fonts/avertacy-light.otf");
+}
+
+@font-face {
+  font-family: AvertacyMed;
+  src: url("/assets/fonts/avertacy-med.otf");
+}
+
+@font-face {
+  font-family: Avertacy;
+  src: url("/assets/fonts/avertacy-reg.otf");
+}
+

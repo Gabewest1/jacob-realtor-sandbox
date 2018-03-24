@@ -73,15 +73,19 @@ const ContactInfo = styled.div`
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    align-items: center;
-    margin-bottom: 20px;  
 `
 const Number = styled.span`
-    margin-right: 15px;
+    font-size: 30px;
+    font-family: HelveticaNeueBlackCond;
 `
-const Email = styled.span``
+const Email = styled.span`
+    margin-right: 7px;
+    font-family: helveticaNueu;
+`
 const Navbar = styled.nav`
-    background: ${({ isBelowTheFold }) => isBelowTheFold ? "#313131" : "transparent"};
+    // background: ${({ isBelowTheFold }) => isBelowTheFold ? "#313131" : "transparent"};
+    background: rgba(0, 0, 0, .618);
+    color: white;
     position: fixed;
     top: 0;
     z-index:1;
@@ -90,13 +94,15 @@ const Navbar = styled.nav`
     transition: background .3s ease-in-out;
     display: flex;
     justify-content: space-between;
-    padding: 10px 30px;
+    align-items: center;
+    height: 67px;
 `
 const ListItem = styled.li`
     text-align: center;
     color: white;
     cursor: pointer;
-
+    font-size: 14px;
+    
     &:hover {
         color: #a2a2a2;
     }

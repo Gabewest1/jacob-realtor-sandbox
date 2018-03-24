@@ -1,0 +1,40 @@
+.hero {
+    width: 100vw;
+    height: 100vh;
+    background: url('/assets/hero1.png') no-repeat;
+    background-size: 120%;
+    background-position: 30% 57%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15);
+
+}
+
+.header-statement {
+    position: relative;
+    bottom: 41px;
+    align-self: flex-start;
+    padding-left: 5.5%;
+    font-size: 40px;
+    // font-family: Museo;
+    // font-family: Proxima;
+    font-family: AntiMed;
+    font-family: Halis;
+    font-family: HalisLight;
+    font-family: Commons;
+    font-family: 'Montserrat', sans-serif;
+    font-family: AvertacyLight;
+    color: #ffffff;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    // background: linear-gradient(to bottom, transparent 85%, #1f1f1f 100%);
+}

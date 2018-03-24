@@ -1,0 +1,84 @@
+.mls-container {
+    width: 89%;
+    // height: 68px;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.763);
+    position: relative;
+    bottom: 40px;
+    box-sizing: border-box;
+    padding: 0.3em 0.41em;
+    padding: 0.4em;
+    font-family: Avertacy;
+    font-family: AvertacyMed;
+    // border: #7c8993 1px solid;
+}
+
+.mls-items-container {
+    display: flex;
+    align-items: center;
+}
+
+.mls-input {
+    width: 140%;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    padding-left: 15px;
+    border: rgba(170, 170, 170, 0.87) 1px solid;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+}
+
+.mls-item-container {
+    border: rgba(170, 170, 170, 0.87) 1px solid; 
+    border-left: none;
+    box-sizing: border-box;
+    padding: 0.5em;
+    overflow: hidden;
+    // border-right: none;   
+    width: 50%;
+    height: 52px;
+    background-color:#e6e6e6;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    &:nth-child(4) {
+        border-right: none;
+    }
+    span {
+        font-family: HalisLight;
+        font-family: 'Montserrat', sans-serif;
+        font-family: Museo;        
+        font-family: Avertacy;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: rgb(90, 90, 90);
+        letter-spacing: 0.06rem;
+    }
+}
+
+.submit-mls-container {
+    width: 90%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-family: Museo;
+    font-family: Avertacy;
+
+    // font-family: HalisLight;    
+    font-size: 16px;
+    text-transform: uppercase;
+    color: rgb(225, 225, 225);
+    letter-spacing: 0.06rem;
+    background-color: #bb2330;
+    border: #921a1d 1px solid;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    &:hover{
+        background-color: #8c1b25;
+        cursor: pointer;
+        color: #ccc;
+    }
+}

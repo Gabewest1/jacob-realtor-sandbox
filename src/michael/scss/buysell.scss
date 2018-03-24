@@ -1,0 +1,103 @@
+.buy-container {
+    width: 170px;
+    height: 218px;
+    background-color: #f9f9f9;
+    color: #242424;
+    position: relative;
+    top: 343px;
+    right: 143px;
+    box-shadow: 0px 0px 5px 0 rgba(138, 138, 138, 0.15);
+    border-radius: 3px;
+    border: rgba(184, 184, 184, 0.516) 1px solid;
+    line-height: 17px;
+    &:hover{
+        cursor: pointer;
+    }
+    p {
+        width: 70%;
+        margin: 0 auto;
+        position: relative;
+        top: 13px;
+        font-size: 17px;
+        font-family: Avertacy;
+        // font-family: SinaNova;
+        font-family: Commons;        
+        text-align: justify;
+    }
+    img {
+        opacity: .95;
+        width: 170px;
+        border-radius: 2px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+
+.sell-container {
+    box-shadow: 0px 0px 5px 0 rgba(138, 138, 138, 0.15);
+    border-radius: 3px;
+    border: rgba(184, 184, 184, 0.516) 1px solid;
+    width: 490px;
+    height: 296px;
+    position: relative;
+    top: 380px;
+    right: 120px;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // padding: 0em 2em;
+    box-sizing: border-box;
+    font-family: Avertacy;
+    font-family: Commons;
+
+    h1 {
+        position: relative;
+        top: 8px;
+        width: 80%;
+        line-height: 20px;
+        font-size: 18px;
+        color: rgb(52, 52, 52);
+        // text-transform: uppercase;
+    }
+    input {
+        position: relative;
+        top: 2px;
+        height: 28px;
+        width: 220px;
+        margin-top: 3px;
+        padding-left: .5em;
+        box-sizing: border-box;
+        border: rgba(184, 184, 184, 0.651) 1px solid;
+        &:nth-child(5){
+            height: 90px;
+        }
+        // margin: 0;
+    }
+    button {
+        margin-top: 7px;        
+        height: 35px;
+        width: 220px;
+        position: relative;
+        top: 0px;
+        font-family: Avertacy;
+        text-transform: uppercase;
+        font-size: 13px;
+        text-transform: uppercase;
+        color: rgb(237, 237, 237);
+        letter-spacing: 0.06rem;
+        background-color: #e14653;
+        border: #c83234 1px solid;
+        border-bottom-right-radius: 2px;
+        border-top-right-radius: 2px;
+        &:hover{
+            background-color: #8c1b25;
+            cursor: pointer;
+            color: #ccc;
+        }
+    }
+    span {
+        font-family: nodemosymbol;
+        color: rgb(60, 60, 60);
+    }
+}
