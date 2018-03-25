@@ -18,7 +18,7 @@ export default class Contact extends React.Component {
                     </div>
                     <Message placeholder="What you'd like to say" />
                 
-                    <SubmitButton>Send Message</SubmitButton>
+                    <SubmitButton>Request A Call</SubmitButton>
                 </Form>
 
             </ContactView>
@@ -36,7 +36,8 @@ const TintedOverlay = styled.div`
 `
 const Header = styled.h1`
     font-size: 46px;
-    margin-bottom: 13px;
+    margin: 0;
+    font-weight: 600;
 `
 const SubHeader = styled.p`
     margin-top: 0;
@@ -56,7 +57,7 @@ const SubmitButton = styled.button`
     width: 100%;
     margin: 0 auto;
     display: block;
-    background: #bb2330;
+    background: #4e4e4e;
     border: solid thin white;;
     height: 50px;
     display: flex;
@@ -73,15 +74,12 @@ const SubmitButton = styled.button`
         background: #850513;
     }
 `
-const Input = styled.input`
-
-`
+const Input = styled.input``
 const Field = styled.div`
     width: 49%;
-    margin-bottom: 20px;
     display: inline-block;
     box-sizing: border-box;
-    margin-bottom: 20px;
+    margin-bottom: 11px;
 
     input {
         width: 100%;
@@ -90,24 +88,25 @@ const Field = styled.div`
         border-radius: 7px;
         border: none;
         padding-left: 8px;
-        height: 42px;
+        height: 44px;
     }
 `
 const Form = styled.div`
-    width: 550px;
+    width: 450px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 `
 const ContactView = styled.div`
-    background: url(/assets/images/hero3.jpg);
+    background: url(/assets/images/hero4.jpg);
     background-attachment: fixed;
     background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-    padding: 30px 0
+    padding: 30px 0;
+    padding-bottom: 70px;
     color: white;
 
     > * {
