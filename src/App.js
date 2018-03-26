@@ -46,11 +46,15 @@ class App extends Component {
 
         <Hero />
 
+        <div style={{ margin: "50px 0" }}>
+          <Icons />
+        </div>
+
         <AboutWrapper style={{ padding: "60px 0", backgroundColor: "#efefef" }}>
           <About5 />
         </AboutWrapper>
 
-        <Contact3 />
+        {/* <Contact3 /> */}
 
         <Testimonials4 />
 

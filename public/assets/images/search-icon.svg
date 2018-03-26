@@ -7,8 +7,8 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="490"
-   height="490"
+   width="110"
+   height="110"
    version="1.1"
    id="svg5062"
    sodipodi:docname="search-icon.svg"
@@ -21,6 +21,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -39,16 +40,16 @@
      inkscape:window-height="705"
      id="namedview5064"
      showgrid="false"
-     inkscape:zoom="1.0938776"
-     inkscape:cx="245"
-     inkscape:cy="245"
+     inkscape:zoom="1"
+     inkscape:cx="96.445902"
+     inkscape:cy="45"
      inkscape:window-x="1272"
      inkscape:window-y="147"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg5062" />
   <path
-     d="m 210.71038,277.68787 a 151.97222,151.73953 0 1 1 1.98655,1.98358 L 43.838932,448.27098 M 134.22766,332.23482 24.966564,441.32853 50.79191,467.11435 160.053,358.02061"
+     d="m 47.458321,63.182088 a 33.904776,34.021386 0 1 1 0.443196,0.44475 L 10.229538,101.42837 M 30.395139,75.41201 6.0191482,99.871824 11.780747,105.65324 36.15673,81.193441"
      id="path5060"
      inkscape:connector-curvature="0"
-     style="fill:#d81d28;fill-opacity:0;stroke:#d81d28;stroke-width:35.73079681;stroke-linecap:round;stroke-opacity:1" />
+     style="fill:#333333;fill-opacity:0;stroke:#333333;stroke-width:7.99134874;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
 </svg>
