@@ -6,10 +6,12 @@ import About2 from "./components/About2"
 import About3 from "./components/About3"
 import About4 from "./components/About4"
 import About5 from "./components/About5"
+import About6 from "./components/About6"
 import Contact from "./components/Contact"
 import Contact2 from "./components/Contact2"
 import Contact3 from "./components/Contact3"
 import Listings from "./components/Listings"
+import ZillowListings from "./components/ZillowListings"
 import Locations from "./components/Locations"
 import Icons from "./components/Icons"
 import Icons2 from "./components/Icons2"
@@ -46,12 +48,14 @@ class App extends Component {
 
         <Hero />
 
+        <ZillowListings />
+
         <div style={{ margin: "50px 0" }}>
           <Icons />
         </div>
 
-        <AboutWrapper style={{ padding: "60px 0", backgroundColor: "#efefef" }}>
-          <About5 />
+        <AboutWrapper style={{ padding: "70px 0", backgroundColor: "#efefef" }}>
+          <About6 />
         </AboutWrapper>
 
         {/* <Contact3 /> */}
@@ -67,36 +71,9 @@ class App extends Component {
 }
 
 const AboutWrapper = styled.div`
-  background: url(/assets/images/skyline.png) no-repeat;
-  background-size: 50%;
-  background-position: bottom right;
-`
-//Adds a transparent triangle between the Header and section below it.
-const Arrows = styled.div`
-    position: absolute;
-    bottom: 0;
-    height: 30px;
-    width: 100%;
-
-    &:after {
-        content: '';
-        border-bottom: solid 30px ${({ color }) => color};
-        border-left: solid 30px transparent;
-        width: 50%;
-        position: absolute;
-        top: 0;
-        left: 50%;
-    }
-
-    &:before {
-      content: '';
-      border-bottom: solid 30px ${({ color }) => color};
-      border-right: solid 30px transparent;
-      width: 50%;
-      position: absolute;
-      top: 0;
-      right: 50%;
-  }
+  // background: url(/assets/images/skyline.png) no-repeat;
+  // background-size: 50%;
+  // background-position: bottom right;
 `
 const Copyright = styled.p`
   margin: 0;
